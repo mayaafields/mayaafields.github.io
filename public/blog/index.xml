@@ -6,44 +6,8 @@
     <description>Recent content in Oh My Blog! on Somrat | Hugo Portfolio Template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
+    <copyright>By Dong Juechu [joydong@umich.edu] 2021 &lt;br&gt;Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
     <lastBuildDate>Tue, 12 May 2020 12:14:34 +0600</lastBuildDate><atom:link href="https://examplesite.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>This Is A Simple Blog Post</title>
-      <link>https://examplesite.com/blog/blog-1/</link>
-      <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
-      
-      <guid>https://examplesite.com/blog/blog-1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>This Is A Simple Blog Post</title>
-      <link>https://examplesite.com/blog/blog-2/</link>
-      <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
-      
-      <guid>https://examplesite.com/blog/blog-2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>This Is A Simple Blog Post</title>
-      <link>https://examplesite.com/blog/blog-3/</link>
-      <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
-      
-      <guid>https://examplesite.com/blog/blog-3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>This Is A Simple Blog Post</title>
-      <link>https://examplesite.com/blog/blog-4/</link>
-      <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
-      
-      <guid>https://examplesite.com/blog/blog-4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
     <item>
       <title>This Is A Simple Blog Post</title>
       <link>https://examplesite.com/blog/blog-5/</link>
@@ -60,6 +24,42 @@
       
       <guid>https://examplesite.com/blog/blog-6/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://examplesite.com/blog/blog-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/blog/blog-2/</guid>
+      <description>Prediction of number of fatal police shoot in the US, March 13 - April 13, 2020.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://examplesite.com/blog/blog-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/blog/blog-4/</guid>
+      <description>SJTU-UM Joint Institute physics teaching group (VP160/260 Honors Physics, VP150/250 Physics, VP369 Modern Physics), 2020 summer and fall.</description>
+    </item>
+    
+    <item>
+      <title>Fully-Autonomous SoC</title>
+      <link>https://examplesite.com/blog/blog-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/blog/blog-1/</guid>
+      <description>Designing customized system-on-chip (SoC) is expensive and time consuming. The FASoC Program aims at developing a complete SoC synthesis tool from user specification to GDSII to reduce that cost.</description>
+    </item>
+    
+    <item>
+      <title>R10K Based Out of Order Processor</title>
+      <link>https://examplesite.com/blog/blog-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/blog/blog-3/</guid>
+      <description>My EECS470 report here.</description>
     </item>
     
   </channel>
