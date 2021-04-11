@@ -39,7 +39,7 @@ experience:
     - name: "General Method to Roller Coaster Design and Analysis Based on NURBS Curves"
       company: "with Yanjun Chen and Haoyang Zhang"
       duration: "2019 Nov"
-      content: "We won silver medal of University Physcis Competition 2019 with this design. It was a fantastic experience to have such brain storming and modeling in 48 hours. We did get much sleep, but a lot of fun. "
+      content: "We won silver medal of University Physcis Competition 2019 with this design. It was a fantastic experience to do intensive brain storming and modeling in 48 hours. We didn't get much sleep, but a lot of fun. "
       img: "images/portfolio/UPC.jpg"
 
 
