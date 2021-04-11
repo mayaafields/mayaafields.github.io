@@ -1,7 +1,7 @@
 ---
 title : "SAY HELLO!"
-bg_image: "images/backgrounds/contact.jpg"
-form_action: "#" # works with https://formspree
+bg_image: "images/backgrounds/sunrise2.png"
+form_action: "mailto:joydong@umich.edu" # works with https://formspree
 name: "Name"
 email: "Email"
 message: "Message"
