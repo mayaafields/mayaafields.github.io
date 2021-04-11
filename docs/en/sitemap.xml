@@ -2,125 +2,125 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://joydddd.github.io/categories/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/categories/"
+                href="https://joydddd.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/categories/"
+                href="https://joydddd.github.io/categories/"
                 />
   </url><url>
-    <loc>https://examplesite.com/categories/database/</loc>
+    <loc>https://joydddd.github.io/categories/database/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/design/</loc>
+    <loc>https://joydddd.github.io/tags/design/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/design/</loc>
+    <loc>https://joydddd.github.io/categories/design/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/development/</loc>
+    <loc>https://joydddd.github.io/categories/development/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/logo/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/blog/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/project-1/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/project-2/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/project-3/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/project-4/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/project-5/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/portfolio/project-6/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/tags/sketch/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/categories/sketch/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://joydddd.github.io/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/"
+                href="https://joydddd.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/"
+                href="https://joydddd.github.io/"
                 />
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://joydddd.github.io/categories/logo/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/blog/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/project-1/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/project-2/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/project-3/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/project-4/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/project-5/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/portfolio/project-6/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/tags/sketch/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/categories/sketch/</loc>
+    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
+  </url><url>
+    <loc>https://joydddd.github.io/tags/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/tags/"
+                href="https://joydddd.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/tags/"
+                href="https://joydddd.github.io/tags/"
                 />
   </url><url>
-    <loc>https://examplesite.com/blog/blog-5/</loc>
+    <loc>https://joydddd.github.io/blog/blog-5/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/blog/blog-6/</loc>
+    <loc>https://joydddd.github.io/blog/blog-6/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/web/</loc>
+    <loc>https://joydddd.github.io/tags/web/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/blog/blog-2/</loc>
+    <loc>https://joydddd.github.io/blog/blog-2/</loc>
   </url><url>
-    <loc>https://examplesite.com/blog/blog-4/</loc>
+    <loc>https://joydddd.github.io/blog/blog-4/</loc>
   </url><url>
-    <loc>https://examplesite.com/experience/</loc>
+    <loc>https://joydddd.github.io/experience/</loc>
   </url><url>
-    <loc>https://examplesite.com/edu/</loc>
+    <loc>https://joydddd.github.io/edu/</loc>
   </url><url>
-    <loc>https://examplesite.com/friends/</loc>
+    <loc>https://joydddd.github.io/friends/</loc>
   </url><url>
-    <loc>https://examplesite.com/blog/blog-1/</loc>
+    <loc>https://joydddd.github.io/blog/blog-1/</loc>
   </url><url>
-    <loc>https://examplesite.com/about/</loc>
+    <loc>https://joydddd.github.io/about/</loc>
   </url><url>
-    <loc>https://examplesite.com/banner/</loc>
+    <loc>https://joydddd.github.io/banner/</loc>
   </url><url>
-    <loc>https://examplesite.com/call-to-action/</loc>
+    <loc>https://joydddd.github.io/call-to-action/</loc>
   </url><url>
-    <loc>https://examplesite.com/quotes/</loc>
+    <loc>https://joydddd.github.io/quotes/</loc>
   </url><url>
-    <loc>https://examplesite.com/blog/blog-3/</loc>
+    <loc>https://joydddd.github.io/blog/blog-3/</loc>
   </url><url>
-    <loc>https://examplesite.com/contact/</loc>
+    <loc>https://joydddd.github.io/contact/</loc>
   </url><url>
-    <loc>https://examplesite.com/service/</loc>
+    <loc>https://joydddd.github.io/service/</loc>
   </url><url>
-    <loc>https://examplesite.com/testimonial/</loc>
+    <loc>https://joydddd.github.io/testimonial/</loc>
   </url>
 </urlset>

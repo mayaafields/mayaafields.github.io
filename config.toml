@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
-title = "Somrat | Hugo Portfolio Template"
+baseURL = "https://joydddd.github.io/"
+title = "Joy Dong"
 theme = "somrat"
 # post pagination
 paginate = "6"
