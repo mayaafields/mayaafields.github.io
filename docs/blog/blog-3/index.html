@@ -47,10 +47,10 @@
   
 
   
-  <meta property="og:image" content="https://joydddd.github.io/images/portfolio/EECS470.png" />
+  <meta property="og:image" content="https://joydddd.github.io/images/portfolio/EECS470rpt.jpg" />
   
   <meta property="og:title" content="R10K Based Out of Order Processor" />
-<meta property="og:description" content="My EECS470 report here." />
+<meta property="og:description" content="This is the project report for University of Michigan course EECS470 Computer Architecture." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://joydddd.github.io/blog/blog-3/" /><meta property="article:section" content="blog" />
 
@@ -157,8 +157,61 @@
           <div class="about-me-text mb-4">
             <h1>R10K Based Out of Order Processor</h1>
           </div>
-          <img src="https://joydddd.github.io/images/portfolio/EECS470.png" alt="image" class="img-fluid w-100 mb-5">
-          <div class="content"><p>My EECS470 report here.</p>
+          <img src="https://joydddd.github.io/images/portfolio/EECS470rpt.jpg" alt="image" class="img-fluid w-100 mb-5">
+          <div class="content"><p>This is the project report for University of Michigan course EECS470 Computer Architecture. We designed a 3-way scaled, R10K based out-of-order processor with advanced branch predictor, prefetching and non-blocked DCache with system verilog. The issue stage uses FIFO to help reduce clock cycle during reservation station selection.</p>
+<h1 id="introduction">Introduction</h1>
+<p>Building a processor of our own is the best introduction to computer architecture. It was a hard journey, especially with a time limit of 6 weeks. Our out-of-order processor is not perfect and we haven&rsquo;t realized all our wonderful advanced features we planned when we started, but we still managed to make 3-way scalar, an advanced branch predictor, prefetcher and non-blocking DCache working.
+In this report, we will elaborate design choices, implementation and performance of the processor in detail. In part II, we will give a overview of the processor and the design choices we made in this processor. In part III, details about each module implementation is provided. In part IV, we provide some test data on and performance analysis on bottlenecks, potential improvements and reflections.</p>
+<h1 id="design-overview">Design Overview</h1>
+<p>We built an out-of-order, 32-bit processor based on the 3-way scaled R10K microarchitecture, with advanced branch predictor, non-blocking cache design and prefetcher, as shown in Fig. \ref{overview}. Our processor support 32 bits RV32IM ISA, without fences, division, CSR operations and system calls.</p>
+<p>Pipeline Spec:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">RS</th>
+<th style="text-align:center">ROB</th>
+<th style="text-align:center">PR</th>
+<th style="text-align:center">FUs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">16 entries</td>
+<td style="text-align:center">32 entries</td>
+<td style="text-align:center">64 regs</td>
+<td style="text-align:center">3 ALU, 2 Load, 1 Branch, 2 Mult</td>
+</tr>
+</tbody>
+</table>
+<p>Advanced features spec:</p>
+<table>
+<thead>
+<tr>
+<th>ICache</th>
+<th>Prefetcher</th>
+<th>SQ</th>
+<th>DCache</th>
+<th>BP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>256 Bytes</td>
+<td>12 lines ahead</td>
+<td>8 entries</td>
+<td>256 Bytes</td>
+<td>32 entries</td>
+</tr>
+</tbody>
+</table>
+<p>Download <a href="/downloads/EECS470_Out_of_Order_Processor_JoyDong.pdf" download="report">report</a></p>
+<h1 id="team">Team</h1>
+<ul>
+<li>Juechu Dong (25%): Reservation Station(Optimization), Store Queue, Dispatch Stage, Issue Stage, Functional Units (Except branch solver), Test Infrastructure, Optimization and Debugging</li>
+<li>Haoyang Zhang (25%): DCache, Memory Controller, Retire Stage, Map Table/Arch. Map Table, Branch FU, and Debugging</li>
+<li>Xiangdong Wei (25%): Reservation Station(Issue Logic), Reorder Buffer, Freelist, Branch Predictor, Pipeline Integration, and Debugging</li>
+<li>Chen Huang (25%): Reservation Station(Issue Logic), Fetch Stage, ICache, Prefetcher, Complete Stage, Pipeline Integration, Test Infrastructure, and Debugging</li>
+</ul>
 </div>
 
           

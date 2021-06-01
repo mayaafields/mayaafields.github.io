@@ -50,7 +50,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://joydddd.github.io/blog/blog-1/</guid>
-      <description>Designing customized system-on-chip (SoC) is expensive and time consuming. The FASoC Program aims at developing a complete SoC synthesis tool from user specification to GDSII to reduce that cost.</description>
+      <description>Build an intent solver that translates high-level user intent into hardware specifications and to satisfy user constraints, in particular, determines appropriate acceleration blocks for user python code Attend weekly meetings with Dr.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://joydddd.github.io/blog/blog-3/</guid>
-      <description>My EECS470 report here.</description>
+      <description>This is the project report for University of Michigan course EECS470 Computer Architecture.</description>
     </item>
     
   </channel>

@@ -158,11 +158,16 @@
             <h1>Fully-Autonomous SoC</h1>
           </div>
           <img src="https://joydddd.github.io/images/portfolio/FASoC.jpg" alt="image" class="img-fluid w-100 mb-5">
-          <div class="content"><p>Designing customized system-on-chip (SoC) is expensive and time consuming. The FASoC Program aims at developing a complete SoC synthesis tool from user specification to GDSII to reduce that cost. A user intent solver comes first in the tool chain to translate high-level user intent into hardware specifications and to satisfy user constraints. It generates hardware design by allocating necessary blocks on the SoC.</p>
+          <div class="content"><ul>
+<li>Build an intent solver that translates high-level user intent into hardware specifications and to satisfy user constraints, in particular, determines appropriate acceleration blocks for user python code</li>
+<li>Attend weekly meetings with Dr. Dreslinski to develop basic research skills in experiment setup and to learn how to narrow down research interests and identify a new research topic</li>
+</ul>
+<h3 id="introduction">Introduction</h3>
+<p>Designing customized system-on-chip (SoC) is expensive and time consuming. The FASoC Program aims at developing a complete SoC synthesis tool from user specification to GDSII to reduce that cost. A user intent solver comes first in the tool chain to translate high-level user intent into hardware specifications and to satisfy user constraints. It generates hardware design by allocating necessary blocks on the SoC.</p>
 <h3 id="problem-statement">Problem Statement</h3>
 <p>The User Intent Solver takes in python code as high-level user intention and calculates memory capacity and core frequency accordingly. It then allocates acceleration blocks to improve the performance. Here the focus is on the second part, to determine the appropriate accelerator and its size on an SoC from the python code it is going to run.</p>
 <h3 id="approach">Approach</h3>
-<h3 id="results">Results</h3>
+<p>In phase I, several popular open source image recognition reporsitories are profiled. Popular library in this area is pytorch and tensorflow. By unitilizing the built-in profiler tool, the atem (torch library) is found to be most time consuming module. The plan is to combine our work with existing work on accelerating the atem library.</p>
 </div>
 
           
