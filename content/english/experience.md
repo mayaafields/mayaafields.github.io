@@ -12,7 +12,7 @@ experience:
     - name : "Instructional Aid for Computer Architecture"
       company : "with <a href=\"https://web.eecs.umich.edu/~brehob/\">Dr. Mark Brehob</a> @UMich"
       duration : "2021 Sept - now"
-      content : "Teach out of order processor design topics including branch prediction, pipelines, prefetching, caches etc. Hold lab session and develop exam problems regarding OoO processor design. "
+      content : "Teach out of order processor design topics including branch prediction, pipelines, prefetching, caches etc. Hold lab sessions and develop exam problems regarding OoO processor design. "
       
     - name : "Out-of-Order Processor Design"
       company : "EECS470 Computer Architecture Project"

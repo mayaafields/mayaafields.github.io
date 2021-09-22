@@ -9,7 +9,7 @@ experience:
       company : "B.S.E. in Computer Engineering | GPA: 4.00/4.00"
       duration : "2020 Sept - 2022 May (exp.)"
       content : "I take computer architecture track and work with Dr. Ron Dresklinski & Dr. Staish Narayanasamy on hardware related researches. <br>
-      <b>Course work:</b> EECS470 Computer Architecture (in process), EECS370 Introduction to Computer Organization (A+), EECS281 Data Structures and Algorithms (A)
+      <b>Course work:</b> EECS470 Computer Architecture (A), EECS281 Data Structures and Algorithms (A), EECS312 Integrated Circuits (A), EECS482 Operating Systems (in progress), Parallele CUDA Programming (in progress)
       "
       
     # experience item loop

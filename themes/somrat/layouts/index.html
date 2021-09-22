@@ -1,0 +1,350 @@
+{{ define "main" }}
+
+<!-- Start Header -->
+{{ with .GetPage "banner" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="header {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="home">
+  <div class="owl-carousel owl-full-width owl-theme" id="background-slide">
+    {{ range .Params.slider_images }}
+    <div class="slider"><img class="img-fluid" src="{{ . | absURL }}" alt="slider-background"></div>
+    {{ end }}
+  </div>
+  <div class="container">
+    <div class="row content">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
+        <div class="head-holder">
+          <h1 class="introduction">{{ .Title | markdownify | emojify }}</h1>
+          <div class="animated-text">
+            <strong class="cd-headline clip">
+              <span class="cd-words-wrapper">
+                {{ range $index, $elements:= .Params.occupations }}
+                <b {{ if eq $index 0 }} class="is-visible" {{ end }}>{{ . }}</b>
+                {{ end }}
+              </span>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+{{ end }}
+<!-- End Header -->
+
+<!-- Start Menu -->
+<section class="menu" id="menu">
+  <nav>
+    <!-- desktop-menu -->
+    <div class="menu-container">
+      <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
+        {{ range site.Menus.main }}
+        <li class="menu-item hvr-underline-from-left 1"><a
+            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{
+            .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      <!-- Language List -->
+      <!-- /desktop-menu -->
+
+      <!-- mobile-menu -->
+    </div>
+  </nav>
+</section>
+<!-- End Menu -->
+
+<!-- Start About Me -->
+{{ with .GetPage "about" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="about-me {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="about">
+  <div class="container">
+    <div class="row about-me-holder">
+      <div class="col-lg-8 col-md-8 col-sm-8 about-me-text d-flex align-self-center">
+        <div class="text-holder wow">
+          <h1>{{ .Title | markdownify }}</h1>
+          <div class="content">{{ .Content | markdownify | emojify }}</div>
+          {{ with .Params.button }}
+          {{ if .enable }}
+          <a href="{{ .link | absURL }}" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ with .Params.image }}
+      <div class="col-lg-4 col-sm-4 col-9 about-me-images wow">
+        <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End About Me -->
+<!-- Experience -->
+{{ with .GetPage "edu" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="education">
+  <div class="container">
+    <h1>{{ .Title | markdownify }}</h1>
+    <div class="row experience-skill">
+      {{ with .Params.experience }}
+      {{ if .enable }}
+      <div class="col-lg-10 col-sm-10 col-10 experience wow">
+        <h3>{{ .title }}</h3>
+        <ul class="experience-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience">
+              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+              <h4>{{ .name | markdownify }}</h4>
+              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+
+{{ with .GetPage "experience" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="timeline">
+  <div class="container">
+    <h1>{{ .Title | markdownify }}</h1>
+    <div class="row experience-skill">
+      {{ with .Params.experience }}
+      {{ if .enable }}
+      <div class="col-lg-10 col-sm-10 col-10 experience wow">
+        <h3>{{ .title }}</h3>
+        <ul class="experience-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience d-flex align-self-center align-items-center ">
+              <div class="col-lg-8 col-sm-8 col-8  single-experience-text">
+                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+                <h4>{{ .name | markdownify }}</h4>
+                {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-9 experience-image">
+                {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
+                  {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- call to action -->
+<!-- {{ with .GetPage "call-to-action" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section id="cta" class="need-service overlay section-sm wow fadeInUp {{.Params.custom_class}}"
+  {{.Params.custom_attributes | safeHTMLAttr}} data-wow-duration="1.5s"
+  style="background-image: url('{{ .Params.bg_image | absURL }}');">
+  <div class="container position-relative z-index-9">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Content }}<div class="text-white content">{{ . | markdownify }}</div> {{ end }}
+    {{ with .Params.button }}
+    {{ if .enable }}
+    <a href="{{ .link | absURL}}">{{ .label }}</a>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }} -->
+<!-- end call to action -->
+
+<!-- Start Testimonials -->
+<!-- {{ with .GetPage "testimonial"}}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="testimonials {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="testimonials-container col-lg-8 offset-lg-2">
+        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify }}</h1>
+        <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1.5s">
+          {{ range .Params.testimonial_slider }}
+          <div class="single-testimonial">
+            <div class="testimonial-holder">
+              <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
+              <h2>{{ .name }}</h2>
+              <span>{{ .designation | markdownify }}</span>
+              <p><i class="fa fa-quote-left"></i> {{ .content | markdownify }} <i class="fa fa-quote-right"></i></p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} -->
+<!-- End Testimonials -->
+
+<!-- funfacts -->
+<!-- {{ with .GetPage "funfacts"}}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="wow fadeInUp section-sm {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}
+  data-wow-duration="1.5s">
+  <div class="container position-relative z-index-9">
+    {{ with .Title}}
+    <div class="services-heading">
+      <div class="bar"></div>
+      <h1>{{ . | markdownify }}</h1>
+    </div>
+    {{ end }}
+    <div class="fun-facts wow fadeInUp" data-wow-duration="1.5s">
+      {{ range .Params.funfacts }}
+      <div class="fun-fact-holder">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
+        <p class="fact-counter count" data-count="{{ .count }}">0</p>
+        <p>{{ .name }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }} -->
+<!-- end funfacts -->
+{{ with .GetPage "quotes"}}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="quotes {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="quotes">
+  <div class="container">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+      <div class="quotes-holder wow">
+        <h1> {{.Title}} </h1>
+        <div class="content">
+
+          <body>{{ .Content | markdownify }}</body>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+
+<!-- Start Contact -->
+{{ with .GetPage "contact"}}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="contact {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}
+  style="background-image: url('{{.Params.bg_image | absURL}}');" id="contact">
+  <div class="container">
+    <div class="row">
+        <div class="contact-holder col-lg-12 col-sm-12 col-sm-12 d-flex align-self-center">
+          <div class="single-experience">
+          <form method="POST" action="{{ .Params.form_action }}" data-toggle="validator">
+            <div class="form-container row wow">
+              <div class="form-group col-lg-6">
+                <input class="form-control" type="text" name="username" id="username" placeholder="{{.Params.name}}"
+                  required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-lg-6">
+                <input class="form-control" type="email" id="email" name="email" placeholder="{{.Params.email}}"
+                  required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-lg-12">
+                <textarea class="form-control" name="message" id="message" rows="12"
+                  placeholder="{{.Params.message}}"></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-lg-12 sub-button">
+                <button class="submit form-control hvr-icon-push" type="submit" value="send"> {{.Params.submit}}
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 contact-text-holder">
+          <div class="wow">
+            <div class="contact-text">
+              {{ .Content | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer col-lg-10 offset-lg-1">
+        <div class="credit content">
+          {{ site.Params.copyright | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End Contact -->
+
+<a href="#home" class="scroll-up hvr-icon-up"></a>
+
+{{ end }}
