@@ -8,6 +8,7 @@ custom_css: ""
 ---
 - Shanghai has only two seasons, winter and summer, and they switch randomly. It is otherwise a wonderful city to live in. 
 - My source of metal support: food, friends and IKEA sharks. 
+- The best thing happened recently: I got a really good book about Hapsburg history on the street from a weird old man.
 
 ## Friends
 

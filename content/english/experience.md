@@ -4,8 +4,16 @@ experience:
   enable : true
   title : "Timeline"
   experience_list:
+    - name : "Rearch on Federated Genomic Analysis System Based on Open-enclave & SGX"
+      company : "instructed by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a>, with Jonah Rosenblum @UMich"
+      duration : "2021 May - now"
+      content : "Solve privacy concerns in genomic data sharing without accuracy penalty from metadata studies or performance penalty from homomorphic encryption. Build a centralized system that collects genomic data from host institutions and analyze them on central server enclave without leaking raw or intermediate data. "
+
+    - name : "Instructional Aid for Computer Architecture"
+      company : "with <a href=\"https://web.eecs.umich.edu/~brehob/\">Dr. Mark Brehob</a> @UMich"
+      duration : "2021 Sept - now"
+      content : "Teach out of order processor design topics including branch prediction, pipelines, prefetching, caches etc. Hold lab session and develop exam problems regarding OoO processor design. "
       
-    # experience item loop
     - name : "Out-of-Order Processor Design"
       company : "EECS470 Computer Architecture Project"
       duration : "2021 Feb - 2021 Apr"
