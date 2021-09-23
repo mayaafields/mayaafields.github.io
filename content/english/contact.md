@@ -16,9 +16,12 @@ custom_css: ""
 ### Email
 joydong@umich.edu
 ### Cell
-+86-159-217-19462
++86-159-217-19462<br>
++1-734-882-9680
 ### WeChat/QQ
 jiaochewchew 1596892951
 ### Address
-Dormitory D21<br> 
-Shanghai Jiaotong University, 800 Dongchuan Road, Shanghai
+1875 Lake Lila Ln <br>
+Apt. C7<br>
+Ann Arbor, MI<br>
+48105
