@@ -4,6 +4,11 @@ experience:
   enable : true
   title : "Timeline"
   experience_list:
+    - name : "Rearch on Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
+      company : "instructed by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a>, with Suman Mallik @UMich"
+      duration : "2021 Sept - now"
+      content : "Design extremely high bandwidth, statically scheduled crossbar for FHE accelerator F1 (MICRO 2021) with strict power and area restrictions. "
+
     - name : "Rearch on Federated Genomic Analysis System Based on Open-enclave & SGX"
       company : "instructed by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a>, with Jonah Rosenblum @UMich"
       duration : "2021 May - now"
