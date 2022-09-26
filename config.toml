@@ -105,7 +105,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Last updated: Sept 2021 <br>By Dong Juechu [joydong@umich.edu] 2021 <br>Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+copyright = "Last updated: Sept 2022 <br>By Dong Juechu [joydong@umich.edu] 2021 <br>Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
 
 
 ################# english navigation ##################

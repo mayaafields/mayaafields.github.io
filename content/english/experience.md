@@ -4,19 +4,23 @@ experience:
   enable : true
   title : "Timeline"
   experience_list:
-    - name : "Rearch on Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
-      company : "instructed by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a>, with Suman Mallik @UMich"
-      duration : "2021 Sept - now"
-      content : "Design extremely high bandwidth, statically scheduled crossbar for FHE accelerator F1 (MICRO 2021) with strict power and area restrictions. "
-
-    - name : "Rearch on Federated Genomic Analysis System Based on Open-enclave & SGX"
-      company : "instructed by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a>, with Jonah Rosenblum @UMich"
+    - name : "Acclerating Long Sequence Alignment (minimap2) on GPU"
+      company : "advised by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a> , co. AMD"
+      duration: "2022 May - now"
+      content : "Acclerate long sequence alignment to process ultra-long full-length mRNA or cDNA reads at high througput and long genomic contigs against a large referencce database. Exploit parallelism in long sequence alignment and offload workload to GPU. Optimize scheduling to maxumize throughput"
+    - name : "Federated Genomic Analysis System Based on Open-enclave & SGX"
+      company : "advised by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a> @UMich"
       duration : "2021 May - now"
       content : "Solve privacy concerns in genomic data sharing without accuracy penalty from metadata studies or performance penalty from homomorphic encryption. Build a centralized system that collects genomic data from host institutions and analyze them on central server enclave without leaking raw or intermediate data. "
 
+    - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
+      company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"
+      duration : "2021 Sept - 2022 May"
+      content : "Design extremely high bandwidth, statically scheduled crossbar for FHE accelerator F1 (MICRO 2021) with strict power and area restrictions. "
+
     - name : "Instructional Aid for Computer Architecture"
       company : "with <a href=\"https://web.eecs.umich.edu/~brehob/\">Dr. Mark Brehob</a> @UMich"
-      duration : "2021 Sept - now"
+      duration : "2021 Sept - 2022 Apr"
       content : "Teach out of order processor design topics including branch prediction, pipelines, prefetching, caches etc. Hold lab sessions and develop exam problems regarding OoO processor design. "
       
     - name : "Out-of-Order Processor Design"
@@ -34,8 +38,8 @@ experience:
       img: "images/portfolio/VE401_choped.jpg"
       link: "/blog/blog-2"
 
-    - name : "Research on Fully-Autonomous SoC"
-      company : "instructed by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a>, with Morteza Fayazi @UMich"
+    - name : "Fully-Autonomous SoC"
+      company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Prof. Ronald Dreslinski</a>"
       duration : "2021 Jan - 2021 May"
       content : "Build an intent solver that translates high-level user intent into hardware specifications and to satisfy user constraints, in particular, determines appropriate acceleration blocks for user python code</br> Attend weekly meetings with Dr. Dreslinski to develop basic research skills in experiment setup and to learn how to narrow down research interests and identify a new research topic"
       img: "images/portfolio/FASoC.jpg"

@@ -15,13 +15,12 @@ custom_css: ""
 ---
 ### Email
 joydong@umich.edu
-### Cell
-+86-159-217-19462<br>
-+1-734-882-9680
+### LinkedIn
+https://www.linkedin.com/in/juechu-dong-b0b638220/
 ### WeChat/QQ
 jiaochewchew 1596892951
 ### Address
-1875 Lake Lila Ln <br>
-Apt. C7<br>
+4844 Bob & Betty Beyster Building <br>
+2260 Hayward St<br>
 Ann Arbor, MI<br>
 48105

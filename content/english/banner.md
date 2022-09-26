@@ -8,7 +8,7 @@ bg_image : "images/backgrounds/full-nav-bg.jpg"
 occupations:
 - "Computer Architect"
 - "Traveler"
-- "Undergraduate Student"
+- "1st Year PhD Student"
 
 # slider background image loop
 slider_images:
