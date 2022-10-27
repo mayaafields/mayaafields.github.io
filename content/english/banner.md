@@ -1,14 +1,11 @@
 ---
 title : "I'm Juechu \"Joy\" Dong"
-# full screen navigation
-first_name : "MacGyver"
-last_name : "SOMRAT"
-bg_image : "images/backgrounds/full-nav-bg.jpg"
+
 # animated text loop
 occupations:
-- "Computer Architect"
+- "Trusted Computer Arch & Sys"
 - "Traveler"
-- "1st Year PhD Student"
+- "1st yr PhD @UMich"
 
 # slider background image loop
 slider_images:

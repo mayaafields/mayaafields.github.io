@@ -133,7 +133,7 @@
 
 
 
-{{ with .GetPage "experience" }}
+{{ with .GetPage "projects" }}
 <style>
   {
       {
@@ -141,7 +141,54 @@
     }
   }
 </style>
-<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="timeline">
+<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="projects">
+  <div class="container">
+    <h1>{{ .Title | markdownify }}</h1>
+    <div class="row experience-skill">
+      {{ with .Params.experience }}
+      {{ if .enable }}
+      <div class="col-lg-10 col-sm-10 col-10 experience wow">
+        <h3>{{ .title }}</h3>
+        <ul class="experience-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience d-flex align-self-center align-items-center ">
+              <div class="col-lg-8 col-sm-8 col-8  single-experience-text">
+                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+                <h4>{{ .name | markdownify }}</h4>
+                {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
+
+              <div class="col-lg-6 col-sm-6 col-9 experience-image">
+                {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
+                  {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
+                </a>
+              </div>
+              {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ with .GetPage "teaching" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="projects">
   <div class="container">
     <h1>{{ .Title | markdownify }}</h1>
     <div class="row experience-skill">
