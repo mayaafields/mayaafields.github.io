@@ -9,7 +9,7 @@
     content="This is meta description">
   
   <meta name="author" content="somrat">
-  <meta name="generator" content="Hugo 0.88.1" />
+  <meta name="generator" content="Hugo 0.68.3" />
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,9 +52,7 @@
   <meta property="og:title" content="R10K Based Out of Order Processor" />
 <meta property="og:description" content="This is the project report for University of Michigan course EECS470 Computer Architecture." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://joydddd.github.io/blog/blog-3/" /><meta property="article:section" content="blog" />
-
-
+<meta property="og:url" content="https://joydddd.github.io/blog/blog-3/" />
 
 
   
@@ -80,9 +78,11 @@
         
         <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#about">About me</a></li>
         
-        <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#education">Education</a></li>
+        <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#news">News</a></li>
         
-        <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#timeline">Timeline</a></li>
+        <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#education">Experience</a></li>
+        
+        <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#projects">Projects</a></li>
         
         <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="https://joydddd.github.io/#quotes">Quotes</a></li>
         
@@ -112,9 +112,11 @@
               
               <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#about">About me</a></li>
               
-              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#education">Education</a></li>
+              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#news">News</a></li>
               
-              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#timeline">Timeline</a></li>
+              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#education">Experience</a></li>
+              
+              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#projects">Projects</a></li>
               
               <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="https://joydddd.github.io/#quotes">Quotes</a></li>
               
@@ -168,18 +170,18 @@ In this report, we will elaborate design choices, implementation and performance
 <table>
 <thead>
 <tr>
-<th style="text-align:center">RS</th>
-<th style="text-align:center">ROB</th>
-<th style="text-align:center">PR</th>
-<th style="text-align:center">FUs</th>
+<th align="center">RS</th>
+<th align="center">ROB</th>
+<th align="center">PR</th>
+<th align="center">FUs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">16 entries</td>
-<td style="text-align:center">32 entries</td>
-<td style="text-align:center">64 regs</td>
-<td style="text-align:center">3 ALU, 2 Load, 1 Branch, 2 Mult</td>
+<td align="center">16 entries</td>
+<td align="center">32 entries</td>
+<td align="center">64 regs</td>
+<td align="center">3 ALU, 2 Load, 1 Branch, 2 Mult</td>
 </tr>
 </tbody>
 </table>
@@ -234,7 +236,7 @@ In this report, we will elaborate design choices, implementation and performance
       <div class="footer col-lg-10 offset-lg-1">
         
         <div class="credit content">
-          Last updated: Sept 2022 <br>By Dong Juechu [joydong@umich.edu] 2021 <br>Copyright © 2020 a hugo theme by <a href="https://somrat.netlify.com">somrat</a>
+          Last updated: Sept 2022 <br>Copyright © 2020 a hugo theme by <a href="https://somrat.netlify.com">somrat</a>
         </div>
       </div>
     </div>

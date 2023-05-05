@@ -4,8 +4,7 @@ title : "I'm Juechu \"Joy\" Dong"
 # animated text loop
 occupations:
 - "Trusted Computer Arch & Sys"
-- "Traveler"
-- "1st yr PhD @UMich"
+- "1st yr PhD student @UMICH"
 
 # slider background image loop
 slider_images:

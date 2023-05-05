@@ -105,7 +105,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Last updated: Sept 2022 <br>By Dong Juechu [joydong@umich.edu] 2021 <br>Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+copyright = "Last updated: Sept 2022 <br>Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
 
 
 ################# english navigation ##################
@@ -123,28 +123,34 @@ url = "about"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Education"
+name = "News"
 pre = "#"
-url = "education"
+url = "news"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Timeline"
+name = "Experience"
 pre = "#"
-url = "timeline"
+url = "education"
 weight = 4
+
+[[Languages.en.menu.main]]
+name = "Projects"
+pre = "#"
+url = "projects"
+weight = 5
 
 [[Languages.en.menu.main]]
 name = "Quotes"
 pre = "#"
 url = "quotes"
-weight = 5
+weight = 6
 
 [[Languages.en.menu.main]]
 name = "Contact"
 pre = "#"
 url = "contact"
-weight = 6
+weight = 7
 
 
 

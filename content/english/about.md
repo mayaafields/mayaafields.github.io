@@ -14,8 +14,7 @@ custom_class: ""
 custom_attributes: "" 
 custom_css: ""
 ---
-Greetings from Joy! Welcome to my page. My Chinese name Juechu (pronounced ge ü e, chu) is hard to pronounce, so you might as well call me Joy.😊 <br>
-No matter which part of the world you're visiting my page from, I've probably been there or am looking forward to visiting. The title picture above was taken in my favorate city Budapest. I spent first 20 years of my life in Shanghai, China, but now I'm at Ann Arbor, Michigan. <br>
-I'm a 1st year PhD student interested in compuater architecture and systems, especially privacy preserving systems. I want to help to make computers run faster and safely with privacy protected. <br>
+Greetings from Joy! Welcome to my page. My Chinese name is 董珏初 Juechu (pronounced ge ü e, chew), and I'm totally fine with Joy.😊 <br>
+I'm a 1st year PhD student working with <a href="https://web.eecs.umich.edu/~nsatish/">Prof. Satish Narayanasamy</a> in the <a href="https://cse.engin.umich.edu/">Computer Science and Engineering Deparment</a> at the University of Michigan. My research focuses on compuater architecture and systems, especially privacy enchancing topics. My work aims at expanding Trusted Execution Environments (TEEs) to the whole platform scale for protecting senstive applications. I'm intereested in making computer systems more secure and run without compromising user privacy. <br>
 Program in: c/c++ cuda (system)verilog <br>
-Speak: English Chinese (a little bit of)German
+Speak: English Mandrin (a little bit of)German

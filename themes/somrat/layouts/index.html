@@ -45,9 +45,8 @@
     <div class="menu-container">
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range site.Menus.main }}
-        <li class="menu-item hvr-underline-from-left 1"><a
-            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{
-            .Name }}</a>
+        <li class="menu-item hvr-underline-from-left 1">
+          <a href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
         </li>
         {{ end }}
       </ul>
@@ -93,6 +92,36 @@
 </section>
 {{ end }}
 <!-- End About Me -->
+
+
+<!-- Start Testimonials -->
+<!-- {{ with .GetPage "testimonial"}}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="testimonials {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="testimonials-container col-lg-8 offset-lg-2">
+        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify }}</h1>
+        <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1.5s">
+          {{ range .Params.testimonial_slider }}
+          <div class="single-testimonial">
+            <div class="testimonial-holder">
+              <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
+              <h2>{{ .name }}</h2>
+              <span>{{ .designation | markdownify }}</span>
+              <p><i class="fa fa-quote-left"></i> {{ .content | markdownify }} <i class="fa fa-quote-right"></i></p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} -->
+<!-- End Testimonials -->
+
+
 <!-- Experience -->
 {{ with .GetPage "edu" }}
 <style>
@@ -117,6 +146,8 @@
               {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
               <h4>{{ .name | markdownify }}</h4>
               {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+            </div>
+            <div class="single-experience-content">
               {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
             </div>
           </li>
@@ -157,15 +188,18 @@
                 {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
                 <h4>{{ .name | markdownify }}</h4>
                 {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
               </div>
 
               <div class="col-lg-6 col-sm-6 col-9 experience-image">
                 {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
-                  {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
-                </a>
+                {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
+                </a> {{ end }}
               </div>
-              {{ end }}
+            </div>
+            <div class="single-experience-content d-flex align-self-center align-items-center ">
+              <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
+              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
             </div>
           </li>
           {{ end }}
@@ -251,33 +285,6 @@
 {{ end }} -->
 <!-- end call to action -->
 
-<!-- Start Testimonials -->
-<!-- {{ with .GetPage "testimonial"}}
-<style>{{.Params.custom_css | safeCSS}}</style>
-<section class="testimonials {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="testimonials-container col-lg-8 offset-lg-2">
-        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify }}</h1>
-        <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1.5s">
-          {{ range .Params.testimonial_slider }}
-          <div class="single-testimonial">
-            <div class="testimonial-holder">
-              <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
-              <h2>{{ .name }}</h2>
-              <span>{{ .designation | markdownify }}</span>
-              <p><i class="fa fa-quote-left"></i> {{ .content | markdownify }} <i class="fa fa-quote-right"></i></p>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }} -->
-<!-- End Testimonials -->
-
 <!-- funfacts -->
 <!-- {{ with .GetPage "funfacts"}}
 <style>
@@ -345,8 +352,8 @@
   style="background-image: url('{{.Params.bg_image | absURL}}');" id="contact">
   <div class="container">
     <div class="row">
-        <div class="contact-holder col-lg-12 col-sm-12 col-sm-12 d-flex align-self-center">
-          <div class="single-experience">
+      <div class="contact-holder col-lg-12 col-sm-12 col-sm-12 d-flex align-self-center">
+        <div class="single-experience">
           <form method="POST" action="{{ .Params.form_action }}" data-toggle="validator">
             <div class="form-container row wow">
               <div class="form-group col-lg-6">

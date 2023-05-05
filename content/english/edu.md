@@ -1,5 +1,5 @@
 ---
-title : "Timeline"
+title : "TIMELINE"
 experience:
   enable : true
   title : "Education"
