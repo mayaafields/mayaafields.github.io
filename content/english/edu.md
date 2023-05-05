@@ -2,12 +2,15 @@
 title : "TIMELINE"
 experience:
   enable : true
-  title : "Education"
+  title : "Experience"
   experience_list:
     - name : "University of Michigan"
       company: "Ph.D in Computer Science and Engineering | Computer Architecture & Systems"
       duration: "2022 Sept - exp. 2027"
       content: "Computer architecture is fun and I want to build fast computing but with extra privacy guarantees. Here I work with Prof. Satish Narayanasamy on confidential computing / hardware guranteed privacy topics. " 
+    - name: "NVIDIA"
+      company: "Deep Learning Compute Architecture | GPU Architecture "
+      duration: "2022 May - 2022 Aug"
     # experience item loop
     - name : "University of Michigen"
       company : "B.S.E. in Computer Engineering | GPA: 4.00/4.00"
