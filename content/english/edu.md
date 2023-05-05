@@ -9,8 +9,10 @@ experience:
       duration: "2022 Sept - exp. 2027"
       content: "Computer architecture is fun and I want to build fast computing but with extra privacy guarantees. Here I work with Prof. Satish Narayanasamy on confidential computing / hardware guranteed privacy topics. " 
     - name: "NVIDIA"
-      company: "Deep Learning Compute Architecture | GPU Architecture "
+      company: "Deep Learning Compute Architect Intern | GPU Architecture"
       duration: "2022 May - 2022 Aug"
+      content: "GPU performance analysis, especially for deep learning workloads. <br>
+      Specialize in: GPU architecture, memory hierarchy & multi-device communication "
     # experience item loop
     - name : "University of Michigen"
       company : "B.S.E. in Computer Engineering | GPA: 4.00/4.00"
