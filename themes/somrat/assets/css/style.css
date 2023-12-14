@@ -900,14 +900,17 @@ input:checked+label span:last-child {
   font-size: 16px;
 }
 
+
+
 /* ========= Start Experience ======= */
 
 .experience-skill {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .experience h1,
 .skill h1 {
+  margin-top:20px;
   color: #f5871f;
   font-weight: 700;
   letter-spacing: 2px;
@@ -933,7 +936,7 @@ input:checked+label span:last-child {
 .experience-chart {
   list-style: none;
   padding: 0px 0px 0px 6px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 ul.experience-chart li {
@@ -1084,6 +1087,42 @@ ul.experience-chart h4 {
   -moz-border-radius: 22px;
   -webkit-border-radius: 22px;
 }
+
+.skill-chart {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  margin-top: 0px;
+}
+
+
+ul.skill-chart h4 {
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.skill-chart li span {
+  font-weight: 700;
+  color: #6f6f6f;
+}
+
+.skill-chart li p {
+  color: #6f6f6f;
+}
+
+.single-skill {
+  position: relative;
+  top: -2px;
+}
+
+.single-skill-content {
+  position: relative;
+  top: -2px;
+  left: 20px;
+}
+
 
 /*--------------------------------
    End About Me

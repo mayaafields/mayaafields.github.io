@@ -7,60 +7,49 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Last updated: Sept 2022 &lt;br&gt;Copyright &amp;copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)</copyright>
-    <lastBuildDate>Tue, 12 May 2020 12:14:34 +0600</lastBuildDate><atom:link href="https://joydddd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 May 2020 12:14:34 +0600</lastBuildDate>
+    <atom:link href="https://joydddd.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This Is A Simple Blog Post</title>
       <link>https://joydddd.github.io/blog/blog-5/</link>
       <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
-      
       <guid>https://joydddd.github.io/blog/blog-5/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
-    
     <item>
       <title>This Is A Simple Blog Post</title>
       <link>https://joydddd.github.io/blog/blog-6/</link>
       <pubDate>Tue, 12 May 2020 12:14:34 +0600</pubDate>
-      
       <guid>https://joydddd.github.io/blog/blog-6/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://joydddd.github.io/blog/blog-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://joydddd.github.io/blog/blog-2/</guid>
       <description>Prediction of number of fatal police shoot in the US, March 13 - April 13, 2020.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://joydddd.github.io/blog/blog-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://joydddd.github.io/blog/blog-4/</guid>
       <description>SJTU-UM Joint Institute physics teaching group (VP160/260 Honors Physics, VP150/250 Physics, VP369 Modern Physics), 2020 summer and fall.</description>
     </item>
-    
     <item>
       <title>Fully-Autonomous SoC</title>
       <link>https://joydddd.github.io/blog/blog-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://joydddd.github.io/blog/blog-1/</guid>
       <description>Build an intent solver that translates high-level user intent into hardware specifications and to satisfy user constraints, in particular, determines appropriate acceleration blocks for user python code Attend weekly meetings with Dr.</description>
     </item>
-    
     <item>
       <title>R10K Based Out of Order Processor</title>
       <link>https://joydddd.github.io/blog/blog-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://joydddd.github.io/blog/blog-3/</guid>
       <description>This is the project report for University of Michigan course EECS470 Computer Architecture.</description>
     </item>
-    
   </channel>
 </rss>

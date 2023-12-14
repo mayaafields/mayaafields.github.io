@@ -129,28 +129,34 @@ url = "news"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Experience"
-pre = "#"
-url = "education"
-weight = 4
-
-[[Languages.en.menu.main]]
 name = "Projects"
 pre = "#"
 url = "projects"
+weight = 4
+
+[[Languages.en.menu.main]]
+name = "Experience"
+pre = "#"
+url = "industry"
 weight = 5
+
+[[Languages.en.menu.main]]
+name = "Service"
+pre = "#"
+url = "service"
+weight = 7
 
 [[Languages.en.menu.main]]
 name = "Quotes"
 pre = "#"
 url = "quotes"
-weight = 6
+weight = 10
 
 [[Languages.en.menu.main]]
 name = "Contact"
 pre = "#"
 url = "contact"
-weight = 7
+weight = 11
 
 
 

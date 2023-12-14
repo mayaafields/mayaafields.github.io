@@ -6,12 +6,12 @@
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
+                hreflang="fr-fr"
                 href="https://joydddd.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://joydddd.github.io/categories/"
                 />
   </url><url>
@@ -31,12 +31,12 @@
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
+                hreflang="fr-fr"
                 href="https://joydddd.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://joydddd.github.io/"
                 />
   </url><url>
@@ -77,12 +77,12 @@
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
+                hreflang="fr-fr"
                 href="https://joydddd.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://joydddd.github.io/tags/"
                 />
   </url><url>
@@ -99,9 +99,13 @@
   </url><url>
     <loc>https://joydddd.github.io/blog/blog-4/</loc>
   </url><url>
-    <loc>https://joydddd.github.io/projects/</loc>
+    <loc>https://joydddd.github.io/edu/</loc>
   </url><url>
-    <loc>https://joydddd.github.io/teaching/</loc>
+    <loc>https://joydddd.github.io/leadership/</loc>
+  </url><url>
+    <loc>https://joydddd.github.io/skill/</loc>
+  </url><url>
+    <loc>https://joydddd.github.io/industry/</loc>
   </url><url>
     <loc>https://joydddd.github.io/friends/</loc>
   </url><url>
@@ -113,16 +117,18 @@
   </url><url>
     <loc>https://joydddd.github.io/call-to-action/</loc>
   </url><url>
+    <loc>https://joydddd.github.io/projects/</loc>
+  </url><url>
     <loc>https://joydddd.github.io/quotes/</loc>
   </url><url>
     <loc>https://joydddd.github.io/blog/blog-3/</loc>
   </url><url>
     <loc>https://joydddd.github.io/contact/</loc>
   </url><url>
+    <loc>https://joydddd.github.io/teaching/</loc>
+  </url><url>
     <loc>https://joydddd.github.io/service/</loc>
   </url><url>
     <loc>https://joydddd.github.io/testimonial/</loc>
-  </url><url>
-    <loc>https://joydddd.github.io/edu/</loc>
   </url>
 </urlset>

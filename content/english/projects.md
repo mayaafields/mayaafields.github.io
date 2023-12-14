@@ -1,17 +1,25 @@
 ---
-
+title: "PROJECTS"
 experience:
   enable : true
-  title : "Projects"
+  # title : "Projects"
   experience_list:
+    - name : "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM" 
+      company : "<u>Juechu Dong</u>, Jonahson Rosenblum, Satish Narayanasamy"
+      duration : "ASPLOS\'24 -- under sumbission"
+      content: " Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br>
+                 Design a new scheme of freshness protection that reduces the space requirement by 50x. <br>
+                 Reduce deployment cost by spacing sharing one intelligent memory device among multiple CPUs. "
+    - name : "SECRET-GWAS: Confidential Computing for Population-Scale GWAS"
+      company : "Jonahson Rosenblum, <u>Juechu Dong</u>, Satish Narayanasamy"
+      duration : "RECOMB'24 -- under submission"
+      content : "Develop a thousand-core platform on Azure Confidential Computing to conduct multi-institutional GWAS on millions of patients in less than a minute. <br>
+                Adapt Spark-based Hail genomic analysis framework to run on TEE under obliviousness requirement. <br>
+                Parallelize GWAS computation on 1k cores to achieve near linear speedup. "
     - name : "Acclerating Long Sequence Alignment (minimap2) on GPU"
       company : "advised by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a> , co. AMD"
       duration: "2022 May - now"
       content : "Acclerate long sequence alignment to process ultra-long full-length mRNA or cDNA reads at high througput and long genomic contigs against a large referencce database. Exploit parallelism in long sequence alignment and offload workload to GPU. Optimize scheduling to maxumize throughput"
-    - name : "Federated Genomic Analysis System Based on Open-enclave & SGX"
-      company : "advised by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a> @UMich"
-      duration : "2021 May - now"
-      content : "Solve privacy concerns in genomic data sharing without accuracy penalty from metadata studies or performance penalty from homomorphic encryption. Build a centralized system that collects genomic data from host institutions and analyze them on central server enclave without leaking raw or intermediate data. "
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"
     #   duration : "2021 Sept - 2022 May"
