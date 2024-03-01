@@ -4,7 +4,7 @@ experience:
   enable : true
   # title : "Projects"
   experience_list:
-    - name : "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM" 
+    - name : "#####################Under Double Blind Review################"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonahson Rosenblum, Satish Narayanasamy"
       duration : "ASPLOS\'24 -- under sumbission"
       content: " Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br>
