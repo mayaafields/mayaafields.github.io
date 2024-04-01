@@ -15,10 +15,8 @@ custom_css: ""
 ---
 ### Email
 joydong@umich.edu
-### LinkedIn
-https://www.linkedin.com/in/juechu-dong-b0b638220/
-### WeChat/QQ
-jiaochewchew 1596892951
+### WeChat
+jiaochewchew
 ### Address
 4844 Bob & Betty Beyster Building <br>
 2260 Hayward St<br>

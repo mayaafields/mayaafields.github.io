@@ -4,7 +4,7 @@ experience:
   enable : true
   # title : "Projects"
   experience_list:
-    - name : "#####################Under Double Blind Review################"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
+    - name : "############Under Double Blind Review#######"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonahson Rosenblum, Satish Narayanasamy"
       duration : "ASPLOS\'24 -- under sumbission"
       content: " Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br>
@@ -16,10 +16,14 @@ experience:
       content : "Develop a thousand-core platform on Azure Confidential Computing to conduct multi-institutional GWAS on millions of patients in less than a minute. <br>
                 Adapt Spark-based Hail genomic analysis framework to run on TEE under obliviousness requirement. <br>
                 Parallelize GWAS computation on 1k cores to achieve near linear speedup. "
-    - name : "Acclerating Long Sequence Alignment (minimap2) on GPU"
-      company : "advised by <a href=\"https://web.eecs.umich.edu/~nsatish/\">Prof. Satish Narayanasamy</a> , co. AMD"
-      duration: "2022 May - now"
-      content : "Acclerate long sequence alignment to process ultra-long full-length mRNA or cDNA reads at high througput and long genomic contigs against a large referencce database. Exploit parallelism in long sequence alignment and offload workload to GPU. Optimize scheduling to maxumize throughput"
+    - name : "mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping"
+      company : "<u>Juechu Dong</u>, Xueshen Liu, Harisankar Sadasivan, Sriranjani Sitaraman, Satish Narayanasamy"
+      duration: "<a href=\"https://biosys-workshop.github.io/\">BioSys</a>-2024"
+      content : "Accelerate computational intensive chaining step in the state-of-art long sequence mapping tool minimap2 by 2.57x-5.33x on ultra-long reads.<br>
+                Optimize towards ultra long reads of 100k+ to accommodate genome sequencing technology trend. <br>
+                Develop adaptive GPU scheduling algorithm to balance highly heterogeneous workload."
+      img: "images/portfolio/mm2-workflow.png"
+      cmt: "[<a href=\"https://github.com/Minimap2onGPU/mm2-gb\">github</a>]" 
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"
     #   duration : "2021 Sept - 2022 May"

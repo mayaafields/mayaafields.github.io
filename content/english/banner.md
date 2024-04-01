@@ -3,8 +3,10 @@ title : "I'm Juechu \"Joy\" Dong"
 
 # animated text loop
 occupations:
-- "Trustworthy Hardware"
-- "2nd yr PhD student @UMICH"
+- "Confidential Computing"
+- "Computer Architect"
+- "PhD candidate @Umich"
+
 
 # slider background image loop
 slider_images:
@@ -13,7 +15,7 @@ slider_images:
 
 # button
 button:
-  enable : true
+  enable : false
   label : "HIRE ME"
   link : "#contact"
 

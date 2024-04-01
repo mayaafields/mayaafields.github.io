@@ -29,7 +29,7 @@ link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
 [[params.plugins.css]]
-link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 [[params.plugins.css]]
 link = "plugins/hover/hover.css"
 [[params.plugins.css]]
@@ -76,25 +76,22 @@ enable = true
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
   
 ############################# social site ########################
-[[params.social]]
-icon = "fab fa-facebook-f"
-link = "https://www.facebook.com/somratpro"
 
 [[params.social]]
-icon = "fab fa-twitter"
-link = "https://twitter.com/somratpro"
-
-[[params.social]]
-icon = "fab fa-instagram"
-link = "https://www.instagram.com/somratpro"
+icon = "fab fa-google-scholar"
+link = "https://scholar.google.com/citations?user=iLqeIPgAAAAJ&hl=en"
 
 [[params.social]]
 icon = "fab fa-github"
-link = "https://github.com/somratpro"
+link = "https://github.com/joydddd"
 
 [[params.social]]
 icon = "fab fa-linkedin"
-link = "https://www.linkedin.com/in/somratpro"
+link = "https://www.linkedin.com/in/juechu-dong-b0b638220/"
+
+[[params.social]]
+icon = "fab fa-x-twitter"
+link = "https://twitter.com/JoyChew_d"
 
 
 ################################### English language #####################################

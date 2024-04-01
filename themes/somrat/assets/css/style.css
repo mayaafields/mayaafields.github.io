@@ -885,8 +885,17 @@ input:checked+label span:last-child {
 }
 
 .about-me-images img {
-  padding-top: 15px;
+  margin-top: 50px;
   width: 80%;
+}
+
+.about-me-images .img-fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
 }
 
 
@@ -898,6 +907,43 @@ input:checked+label span:last-child {
   font-weight: 900;
   top: 6px;
   font-size: 16px;
+}
+
+.about-me-icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px;
+}
+
+.about-me-icons div {
+  display: inline-block;
+}
+
+.about-me-icons a{
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 25px;
+}
+
+.about-me-icons .fab{
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: transparent;
+  padding: 7px;
+}
+
+.about-me-icons .fab:hover {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 
@@ -962,7 +1008,7 @@ ul.experience-chart li:after {
   background: #fff;
   content: '';
   -webkit-transition: all 0.3s;
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 
 ul.experience-chart li:hover:after {
@@ -995,10 +1041,32 @@ ul.experience-chart h4 {
   display: block;
   max-height: 200px;
   width: auto;
+  border-radius: 10px; /* Adjust as needed */
 }
 
-.experience-image img:hover{
+.experience-image img.linked {
+  transition: filter 0.3s ease;
+}
+
+.experience-image img.linked:hover{
   filter: brightness(70%);
+}
+
+
+.experience-link {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 700;
+  margin-top: 15px;
+  display: inline-block;
+  border: 2px solid #4d4d4d;
+  padding: 7px 10px;
+}
+
+.experience-link:hover,
+.experience-link:focus {
+  text-decoration: none;
+  color: #4d4d4d;
 }
 
 
@@ -1011,15 +1079,88 @@ ul.experience-chart h4 {
   display: block;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 .single-experience:hover + .single-experience-content,
 .single-experience-content:hover {
-  max-height: 200px;
+  max-height: 500px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in;
+  transition: max-height 0.5s ease-in;
 }
+
+
+/* ========= Edu Experience ======= */
+
+
+.edu-chart {
+  list-style: none;
+  padding: 0px 0px 0px 6px;
+  margin-top: 10px;
+}
+
+ul.edu-chart li {
+  padding-left: 30px;
+  border-left: 2px solid #6f6f6f;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+ul.edu-chart li:last-child {
+  padding-bottom: 0;
+}
+
+ul.edu-chart li:after {
+  font: normal normal normal 22px/1 FontAwesome;
+  content: "\f19d";
+  color: #4d4d4d;
+  position: absolute;
+  top: -1px;
+  left: -12px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; 
+}
+
+ul.edu-chart li:hover:after {
+  color: #f5871f; 
+}
+
+ul.edu-chart h4 {
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.edu-chart li span {
+  font-weight: 700;
+  color: #6f6f6f;
+}
+
+.edu-chart li p {
+  color: #6f6f6f;
+}
+
+
+.edu-image {
+  max-height: 200px;
+  width: auto;
+}
+.edu-image img{
+  display: block;
+  max-height: 200px;
+  width: auto;
+}
+
+.edu-image img:hover{
+  filter: brightness(70%);
+}
+
 
 /* ========= Start Skill ======= */
 
@@ -1787,7 +1928,7 @@ textarea.form-control::-webkit-input-placeholder,
 .footer-icons a,
 .to-top a {
   text-decoration: none;
-  color: #313131;
+  color: #fff;
   font-size: 17px;
 }
 
@@ -1799,7 +1940,7 @@ textarea.form-control::-webkit-input-placeholder,
 .to-top .fa {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: #fff;
+  background: transparent;
   padding: 7px;
 }
 
@@ -2174,7 +2315,6 @@ textarea.form-control::-webkit-input-placeholder,
   .about-me-text {
     display: block;
     height: auto;
-    margin-bottom: 30px;
     -webkit-order: 2;
     -moz-order: 2;
     -ms-order: 2;
@@ -2182,7 +2322,7 @@ textarea.form-control::-webkit-input-placeholder,
     order: 2;
   }
 
-  .about-me-image {
+  .about-me-images {
     -webkit-order: 1;
     -moz-order: 1;
     -ms-order: 1;
@@ -2190,6 +2330,8 @@ textarea.form-control::-webkit-input-placeholder,
     order: 1;
     margin-bottom: 30px;
   }
+
+  .about
 
   .about-me-holder {
     display: flex;
@@ -2206,7 +2348,7 @@ textarea.form-control::-webkit-input-placeholder,
   }
 
   .skill {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .skillbar {

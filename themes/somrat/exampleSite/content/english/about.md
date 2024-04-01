@@ -5,7 +5,7 @@ image : "images/backgrounds/portrait.jpg"
 button:
   enable : true
   label : "DOWNLOAD MY CV"
-  link : "#"
+  link : "https://github.com/joydddd/CV/blob/master/main.pdf?raw=true)"
 
 ########################### Experience ##############################
 experience:

@@ -17,7 +17,7 @@
   </div>
   <div class="container">
     <div class="row content">
-      <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
+      <div class="col-lg-10 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
         <div class="head-holder">
           <h1 class="introduction">{{ .Title | markdownify | emojify }}</h1>
           <div class="animated-text">
@@ -71,16 +71,20 @@
 <section class="about-me {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="about">
   <div class="container">
     <div class="row about-me-holder">
-      <div class="col-lg-8 col-md-8 col-sm-8 about-me-text d-flex align-self-center">
+      <div class="col-lg-12 col-md-12 col-sm-12 about-me-text d-flex align-self-center">
         <div class="text-holder wow">
           <h1>{{ .Title | markdownify }}</h1>
           <div class="content">{{ .Content | markdownify | emojify }}</div>
           {{ with .Params.button }}
           {{ if .enable }}
-          <a href="https://github.com/joydddd/CV/blob/master/main.pdf?raw=true" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
+          <a href="{{ .link }}" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
           {{ end }}
           {{ end }}
-        </div>
+          <ul class="about-me-icons list-inline ">
+            {{ range site.Params.social }}
+            <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
       </div>
       {{ with .Params.image }}
       <div class="col-lg-4 col-sm-4 col-9 about-me-images wow">
@@ -158,6 +162,71 @@
 
 
 <!-- Experience -->
+
+{{ with .GetPage "experience" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="industry">
+  <div class="container">
+    <h1>{{ .Title | markdownify }}</h1>
+    <div class="row experience-skill">
+
+      {{ with .Params.edu }}
+      {{ if .enable }}
+      <div class="col-lg-6 col-sm-6 col-11 experience wow">
+        <h3>{{ .title }}</h3>
+        <ul class="edu-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience">
+              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+              <h4>{{ .name | markdownify }}</h4>
+              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+            </div>
+            <div class="single-experience-content">
+              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+      {{ with .Params.experience }}
+      {{ if .enable }}
+      <div class="col-lg-6 col-sm-6 col-11 experience wow">
+        <h3>{{ .title }}</h3>
+        <ul class="experience-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience">
+              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+              <h4>{{ .name | markdownify }}</h4>
+              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+            </div>
+            <div class="single-experience-content">
+              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+
 {{ with .GetPage "projects" }}
 <style>
   {
@@ -172,7 +241,7 @@
     <div class="row experience-skill">
       {{ with .Params.experience }}
       {{ if .enable }}
-      <div class="col-lg-10 col-sm-10 col-10 experience wow">
+      <div class="col-lg-12 col-sm-12 col-12 experience wow">
         <h3>{{ .title }}</h3>
         <ul class="experience-chart">
           {{ range .experience_list }}
@@ -182,154 +251,23 @@
                 {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
                 <h4>{{ .name | markdownify }}</h4>
                 {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .cmt }} <p>{{ . | markdownify }}</p> {{ end }}
               </div>
-
-              <div class="col-lg-4 col-sm-2 col-2 experience-image">
+              <div class="col-lg-8 col-sm-4 col-8 experience-image">
+                {{ if .link}}
                 {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
+                {{ with .img}} <img class="img-fluid linked" src="{{ . | absURL }}" alt="experience">
+                </a> {{ end }}
+                {{ else }}
                 {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
                 </a> {{ end }}
+                {{ end }}
               </div>
             </div>
             <div class="single-experience-content d-flex align-self-center align-items-center ">
               <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
               {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
               </div>
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-      {{ end }}
-
-    </div>
-  </div>
-</section>
-{{ end }}
-
-
-{{ with .GetPage "industry" }}
-<style>
-  {
-      {
-      .Params.custom_css | safeCSS
-    }
-  }
-</style>
-<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="industry">
-  <div class="container">
-    <h1>{{ .Title | markdownify }}</h1>
-    <div class="row experience-skill">
-      {{ with .Params.experience }}
-      {{ if .enable }}
-      <div class="col-lg-10 col-sm-10 col-10 experience wow">
-        <h3>{{ .title }}</h3>
-        <ul class="experience-chart">
-          {{ range .experience_list }}
-          <li>
-            <div class="single-experience">
-              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-              <h4>{{ .name | markdownify }}</h4>
-              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-            </div>
-            <div class="single-experience-content">
-              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-      {{ end }}
-
-    </div>
-  </div>
-</section>
-{{ end }}
-
-
-{{ with .GetPage "edu" }}
-<style>
-  {
-      {
-      .Params.custom_css | safeCSS
-    }
-  }
-</style>
-<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="education">
-  <div class="container">
-    <h1>{{ .Title | markdownify }}</h1>
-    <div class="row experience-skill">
-      {{ with .Params.experience }}
-      {{ if .enable }}
-      <div class="col-lg-10 col-sm-10 col-10 experience wow">
-        <h3>{{ .title }}</h3>
-        <ul class="experience-chart">
-          {{ range .experience_list }}
-          <li>
-            <div class="single-experience">
-              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-              <h4>{{ .name | markdownify }}</h4>
-              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-            </div>
-            <div class="single-experience-content">
-              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-      {{ end }}
-
-    </div>
-  </div>
-</section>
-{{ end }}
-
-
-
-
-{{ with .GetPage "teaching" }}
-<style>
-  {
-      {
-      .Params.custom_css | safeCSS
-    }
-  }
-</style>
-<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="service">
-  <div class="container">
-    <h1>{{ .Title | markdownify }}</h1>
-    <div class="row experience-skill">
-      {{ with .Params.experience }}
-      {{ if .enable }}
-      <div class="col-lg-10 col-sm-10 col-10 experience wow">
-        <h3>{{ .title }}</h3>
-        <ul class="experience-chart">
-          {{ range .experience_list }}
-          <li>
-            <div class="single-experience d-flex align-self-center align-items-center ">
-              {{ if .img }}
-              <div class="col-lg-8 col-sm-8 col-8  single-experience-text">
-                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-                <h4>{{ .name | markdownify }}</h4>
-                {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
-              </div>
-              <div class="col-lg-6 col-sm-6 col-9 experience-image">
-                {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
-                  {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience"> {{ end }}
-                  {{ with .link }} </a> {{ end }}
-              </div>
-              {{ else }}
-              <div class="col-lg-12 col-sm-12 col-12  single-experience-text">
-                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-                <h4>{{ .name | markdownify }}</h4>
-                {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
-                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
-              </div>
-              {{ end }}
             </div>
           </li>
           {{ end }}
@@ -357,7 +295,7 @@
     <div class="row experience-skill">
       {{ with .Params.experience }}
       {{ if .enable }}
-      <div class="col-lg-10 col-sm-10 col-10 experience wow">
+      <div class="col-lg-12 col-sm-12 col-12 experience wow">
         <h3>{{ .title }}</h3>
         <ul class="experience-chart">
           {{ range .experience_list }}
@@ -366,7 +304,89 @@
               {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
               <h4>{{ .name | markdownify }}</h4>
               {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+            </div>
+            <div class="single-experience-content d-flex align-self-center align-items-center ">
+              {{ if .img }}
+              <div class="col-lg-8 col-sm-8 col-8 single-experience-text">
+                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
+              <div class="col-lg-6 col-sm-6 col-9 experience-image">
+                {{ if .link}}
+                {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
+                {{ with .img}} <img class="img-fluid linked" src="{{ . | absURL }}" alt="experience">
+                </a> {{ end }}
+                {{ else }}
+                {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
+                </a> {{ end }}
+                {{ end }}
+              </div>
+
+              {{ else }}
+              <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
               {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
+
+              {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{ with .GetPage "teaching" }}
+<style>
+  {
+      {
+      .Params.custom_css | safeCSS
+    }
+  }
+</style>
+<section class="experience {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="teaching">
+  <div class="container">
+    <h1>{{ .Title | markdownify }}</h1>
+    <div class="row experience-skill">
+      {{ with .Params.experience }}
+      {{ if .enable }}
+      <div class="col-lg-12 col-sm-12 col-12 experience wow">
+        <h3>{{ .title }}</h3>
+        <ul class="experience-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience">
+              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+              <h4>{{ .name | markdownify }}</h4>
+              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+            </div>
+            <div class="single-experience-content d-flex align-self-center align-items-center ">
+              {{ if .img }}
+              <div class="col-lg-8 col-sm-8 col-8 single-experience-text">
+                {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
+              <div class="col-lg-6 col-sm-6 col-9 experience-image">
+                {{ if .link}}
+                {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
+                {{ with .img}} <img class="img-fluid linked" src="{{ . | absURL }}" alt="experience">
+                </a> {{ end }}
+                {{ else }}
+                {{ with .img}} <img class="img-fluid" src="{{ . | absURL }}" alt="experience">
+                </a> {{ end }}
+                {{ end }}
+              </div>
+
+              {{ else }}
+              <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
+              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+              </div>
+
+              {{ end }}
             </div>
           </li>
           {{ end }}
@@ -512,12 +532,38 @@
         <div class="credit content">
           {{ site.Params.copyright | markdownify }}
         </div>
+        <div class="to-top">
+          <a href="#home"><i class="fa fa-chevron-up"></i></a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-<!-- End Contact -->
+
+
+{{ with .GetPage "contact"}}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="contact {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} style="background-image: url('{{.Params.bg_image | absURL}}');" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="footer col-lg-10 offset-lg-1">
+        <ul class="footer-icons list-inline">
+          {{ range site.Params.social }}
+          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+        <div class="to-top">
+          <a href="#home"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <div class="credit content">
+          {{ site.Params.copyright | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 
 <a href="#home" class="scroll-up hvr-icon-up"></a>
 
