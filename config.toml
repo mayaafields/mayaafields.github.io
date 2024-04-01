@@ -102,7 +102,7 @@ contentDir = "content/english"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Last updated: Sept 2022 <br>Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
+copyright = "Last updated: Mar 2024 <br>Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
 
 
 ################# english navigation ##################
@@ -126,22 +126,28 @@ url = "news"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Projects"
-pre = "#"
-url = "projects"
-weight = 4
-
-[[Languages.en.menu.main]]
 name = "Experience"
 pre = "#"
 url = "industry"
+weight = 4
+
+[[Languages.en.menu.main]]
+name = "Projects"
+pre = "#"
+url = "projects"
 weight = 5
 
 [[Languages.en.menu.main]]
 name = "Service"
 pre = "#"
-url = "service"
+url = "leadership"
 weight = 7
+
+[[Languages.en.menu.main]]
+name = "Skills"
+pre = "#"
+url = "skills"
+weight = 8
 
 [[Languages.en.menu.main]]
 name = "Quotes"
