@@ -23,7 +23,8 @@ experience:
                 Optimize towards ultra long reads of 100k+ to accommodate genome sequencing technology trend. <br>
                 Develop adaptive GPU scheduling algorithm to balance highly heterogeneous workload."
       img: "images/portfolio/mm2-workflow.png"
-      cmt: "[<a href=\"https://github.com/Minimap2onGPU/mm2-gb\">github</a>]" 
+      cmt: "[*github*](https://github.com/Minimap2onGPU/mm2-gb) [*paper*](https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1)" 
+      link: https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"
     #   duration : "2021 Sept - 2022 May"
