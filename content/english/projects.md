@@ -6,6 +6,7 @@ experience:
   experience_list:
     - name : "############Under Double Blind Review#######"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonahson Rosenblum, Satish Narayanasamy"
+      tag: "toleo"
       duration : "ASPLOS\'24 -- under sumbission"
       content: " Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br>
                  Design a new scheme of freshness protection that reduces the space requirement by 50x. <br>
@@ -18,12 +19,14 @@ experience:
                 Parallelize GWAS computation on 1k cores to achieve near linear speedup. "
     - name : "mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping"
       company : "<u>Juechu Dong</u>, Xueshen Liu, Harisankar Sadasivan, Sriranjani Sitaraman, Satish Narayanasamy"
+      pin: true
+      tag: "mm2-gb"
       duration: "<a href=\"https://biosys-workshop.github.io/\">BioSys</a>-2024"
-      content : "Accelerate computational intensive chaining step in the state-of-art long sequence mapping tool minimap2 by 2.57x-5.33x on ultra-long reads.<br>
-                Optimize towards ultra long reads of 100k+ to accommodate genome sequencing technology trend. <br>
-                Develop adaptive GPU scheduling algorithm to balance highly heterogeneous workload."
+      content : "🌟**Performance Boost**: Accelerate bottleneck step (chaining) of state-of-art long sequence mapping tool minimap2 by 2.57x-5.33x on GPU. <br>
+                🌟**Scales well**: Optimize towards ultra long reads of 50kb+ to accommodate genome sequencing technology trend. <br>
+                🌟**Open Sourced!** with active maintainance and optimization! Welcome community contributions~ "
       img: "images/portfolio/mm2-workflow.png"
-      cmt: "[[github](https://github.com/Minimap2onGPU/mm2-gb)] [[preprint](https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1)]" 
+      cmt: "[[code](https://github.com/Minimap2onGPU/mm2-gb)] [[preprint](https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1)]" 
       link: https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"

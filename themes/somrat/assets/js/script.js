@@ -53,6 +53,9 @@
 	/*--------------------------------
 	 Start Smooth Scrolling
 	----------------------------------*/
+	function getScrollOffset() {
+		return $('.menu-container').height();
+	}
 	function smoothScroll() {
 		// Select all links with hashes
 		$('a[href*="#"]')
@@ -73,7 +76,7 @@
 						// Only prevent default if animation is actually gonna happen
 						event.preventDefault();
 						$('html, body').animate({
-							scrollTop: target.offset().top
+							scrollTop: target.offset().top - getScrollOffset()
 						}, 1000, "easeInOutExpo", function () {
 							// Callback after animation
 							// Must change focus!

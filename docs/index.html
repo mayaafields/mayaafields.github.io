@@ -235,7 +235,7 @@ I&rsquo;m a 2nd year PhD student advised by <a href="https://web.eecs.umich.edu/
             <h3>[Mar 2024]</h3> 
             </div>
             <div class="single-news-content" id="single-news-content">
-            <h4> Our work <a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1">mm2-gb</a> is accepted by <a href="https://biosys-workshop.github.io/dist/index.html">BioSys'24</a>. We offer performance boost on ultra-long read mapping without accuracy loss on GPUs. Many thanks to AMD HPC team! See you in San Diego~</h4>
+            <h4> Our work <a href="#mm2-gb">mm2-gb</a> for long sequence DNA mapping is accepted by <a href="https://biosys-workshop.github.io/dist/index.html">BioSys'24</a>. Checkout our open sourced <a href="https://github.com/Minimap2onGPU/mm2-gb">demo</a>. Many thanks to AMD HPC team! see you in San Diego~</h4>
             </div>
           </div>
         </li>
@@ -388,57 +388,61 @@ I&rsquo;m a 2nd year PhD student advised by <a href="https://web.eecs.umich.edu/
         <h3></h3>
         <ul class="experience-chart">
           
-          <li>
-            <div class="single-experience align-self-center align-items-center ">
-              <div class="single-experience-text">
+          <li id="toleo">
+            <div class="single-experience align-self-center align-items-center d-flex ">
+              <div class="col-lg-9 col-sm-8 col-11 single-experience-text">
                  <span>ASPLOS'24 &ndash; under sumbission</span> 
                 <h4>############Under Double Blind Review#######</h4>
                  <span><u>Juechu Dong</u>, Jonahson Rosenblum, Satish Narayanasamy</span> 
                 
               </div>
-              <div class="col-lg-8 col-sm-4 col-8 experience-image">
+              <div class="col-lg-4 col-sm-4 col-8 experience-image">
                 
                 
                 
               </div>
             </div>
+            
             <div class="single-experience-content d-flex align-self-center align-items-center ">
               <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
                <p>Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br> Design a new scheme of freshness protection that reduces the space requirement by 50x. <br> Reduce deployment cost by spacing sharing one intelligent memory device among multiple CPUs.</p> 
               </div>
             </div>
+            
           </li>
           
-          <li>
-            <div class="single-experience align-self-center align-items-center ">
-              <div class="single-experience-text">
+          <li id="">
+            <div class="single-experience align-self-center align-items-center d-flex ">
+              <div class="col-lg-9 col-sm-8 col-11 single-experience-text">
                  <span>RECOMB'24 &ndash; under submission</span> 
                 <h4>SECRET-GWAS: Confidential Computing for Population-Scale GWAS</h4>
                  <span>Jonahson Rosenblum, <u>Juechu Dong</u>, Satish Narayanasamy</span> 
                 
               </div>
-              <div class="col-lg-8 col-sm-4 col-8 experience-image">
+              <div class="col-lg-4 col-sm-4 col-8 experience-image">
                 
                 
                 
               </div>
             </div>
+            
             <div class="single-experience-content d-flex align-self-center align-items-center ">
               <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
                <p>Develop a thousand-core platform on Azure Confidential Computing to conduct multi-institutional GWAS on millions of patients in less than a minute. <br> Adapt Spark-based Hail genomic analysis framework to run on TEE under obliviousness requirement. <br> Parallelize GWAS computation on 1k cores to achieve near linear speedup.</p> 
               </div>
             </div>
+            
           </li>
           
-          <li>
-            <div class="single-experience align-self-center align-items-center ">
-              <div class="single-experience-text">
+          <li id="mm2-gb">
+            <div class="single-experience align-self-center align-items-center d-flex ">
+              <div class="col-lg-9 col-sm-8 col-11 single-experience-text">
                  <span><a href="https://biosys-workshop.github.io/">BioSys</a>-2024</span> 
                 <h4>mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping</h4>
                  <span><u>Juechu Dong</u>, Xueshen Liu, Harisankar Sadasivan, Sriranjani Sitaraman, Satish Narayanasamy</span> 
-                 <p>[<a href="https://github.com/Minimap2onGPU/mm2-gb">github</a>] [<a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1">preprint</a>]</p> 
+                 <p>[<a href="https://github.com/Minimap2onGPU/mm2-gb">code</a>] [<a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1">preprint</a>]</p> 
               </div>
-              <div class="col-lg-8 col-sm-4 col-8 experience-image">
+              <div class="col-lg-4 col-sm-4 col-8 experience-image">
                 
                  <a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1"> 
                  <img class="img-fluid linked" src="https://joydddd.github.io/images/portfolio/mm2-workflow.png" alt="experience">
@@ -446,22 +450,24 @@ I&rsquo;m a 2nd year PhD student advised by <a href="https://web.eecs.umich.edu/
                 
               </div>
             </div>
-            <div class="single-experience-content d-flex align-self-center align-items-center ">
+            
+            <div class="single-experience d-flex align-self-center align-items-center ">
               <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
-               <p>Accelerate computational intensive chaining step in the state-of-art long sequence mapping tool minimap2 by 2.57x-5.33x on ultra-long reads.<br> Optimize towards ultra long reads of 100k+ to accommodate genome sequencing technology trend. <br> Develop adaptive GPU scheduling algorithm to balance highly heterogeneous workload.</p> 
+               <p>🌟<strong>Performance Boost</strong>: Accelerate bottleneck step (chaining) of state-of-art long sequence mapping tool minimap2 by 2.57x-5.33x on GPU. <br> 🌟<strong>Scales well</strong>: Optimize towards ultra long reads of 50kb+ to accommodate genome sequencing technology trend. <br> 🌟<strong>Open Sourced!</strong> with active maintainance and optimization! Welcome community contributions~</p> 
               </div>
             </div>
+            
           </li>
           
-          <li>
-            <div class="single-experience align-self-center align-items-center ">
-              <div class="single-experience-text">
+          <li id="">
+            <div class="single-experience align-self-center align-items-center d-flex ">
+              <div class="col-lg-9 col-sm-8 col-11 single-experience-text">
                  <span>2021 Feb - 2021 Apr</span> 
                 <h4>Out-of-Order Processor Design</h4>
                  <span>EECS470 Computer Architecture Project</span> 
                 
               </div>
-              <div class="col-lg-8 col-sm-4 col-8 experience-image">
+              <div class="col-lg-4 col-sm-4 col-8 experience-image">
                 
                  <a href="https://joydddd.github.io/blog/blog-3"> 
                  <img class="img-fluid linked" src="https://joydddd.github.io/images/portfolio/EECS470rpt.jpg" alt="experience">
@@ -469,11 +475,13 @@ I&rsquo;m a 2nd year PhD student advised by <a href="https://web.eecs.umich.edu/
                 
               </div>
             </div>
+            
             <div class="single-experience-content d-flex align-self-center align-items-center ">
               <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
                <p>Design an out-of-order, 3-way scalar processor based on R10K design using system verilog. Add additional feature load store queue, advance branch predictor and cache heriachy.</p> 
               </div>
             </div>
+            
           </li>
           
         </ul>

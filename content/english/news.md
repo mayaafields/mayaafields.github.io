@@ -5,7 +5,7 @@ news:
   news_list: 
     # - name: "I joined Meta Pytorch Compiler team this summer as a research scienctist intern. See you at Menlo Park~"
     #   date: "May 2024"
-    - name: "Our work [mm2-gb](https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1) is accepted by [BioSys'24](https://biosys-workshop.github.io/dist/index.html). We offer performance boost on ultra-long read mapping without accuracy loss on GPUs. Many thanks to AMD HPC team! See you in San Diego~ "
+    - name: "Our work [mm2-gb](#mm2-gb) for long sequence DNA mapping is accepted by [BioSys'24](https://biosys-workshop.github.io/dist/index.html). Checkout our open sourced [demo](https://github.com/Minimap2onGPU/mm2-gb). Many thanks to AMD HPC team! see you in San Diego~ "
       date: "Mar 2024"
     - name: "I passed PhD qualification test and becomes a PhD candidate. "
       date: "Jan 2024"
