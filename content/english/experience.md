@@ -9,6 +9,12 @@ experience:
       duration: "2022 May - 2022 Aug"
       content: "GPU performance analysis, especially for deep learning workloads. <br>
       Specialize in: GPU architecture, memory hierarchy & multi-device communication "
+    - name: "Meta"
+      company: "Research Scientist Intern | PyTorch Team"
+      duration: "2024 May - 2024 Aug"
+      content: "• Develop new techniques in TorchDynamo, TorchInductor, PyTorch core, PyTorch Distributed.<br>
+• Explore the intersection of PyTorch compiler and PyTorch distributed.<br>
+• Optimize Generative AI models across the stack (pre-training, fine-tuning, and inference)."
 
 edu:
   enable : true
