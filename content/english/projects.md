@@ -26,7 +26,7 @@ experience:
                 🌟**Scales well**: Optimize towards ultra long reads of 50kb+ to accommodate genome sequencing technology trend. <br>
                 🌟**Open Sourced!** with active maintainance and optimization! Welcome community contributions~ "
       img: "images/portfolio/mm2-workflow.png"
-      cmt: "[[code](https://github.com/Minimap2onGPU/mm2-gb)] [[preprint](https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1)]" 
+      cmt: "[[code](https://github.com/Minimap2onGPU/mm2-gb)] [[preprint](https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1)] [[slides]](/downloads/mm2-gb-BioSys-slides.pdf)" 
       link: https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"
