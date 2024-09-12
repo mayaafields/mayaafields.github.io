@@ -7,9 +7,9 @@ experience:
     - name: "Meta"
       company: "Research Scientist Intern | PyTorch Team"
       duration: "2024 May - 2024 Aug"
-      content: "• Develop new techniques in TorchDynamo, TorchInductor, PyTorch core, PyTorch Distributed.<br>
-• Explore the intersection of PyTorch compiler and PyTorch distributed.<br>
-• Optimize Generative AI models across the stack (pre-training, fine-tuning, and inference)."
+      content: "Develop new techniques in PyTorch compiler with a focus on GPU performance optimization. <br>
+      Build the popular FlexAttention API that combines the flexibility of PyTorch and the performance of expert-tuned attention kernels. <br>
+      Conduct performance analysis and optimizations on attention kernels."
     - name: "NVIDIA"
       company: "Deep Learning Compute Architect Intern | GPU Architecture"
       duration: "2022 May - 2022 Aug"

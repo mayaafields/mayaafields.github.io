@@ -234,6 +234,17 @@ Juechu (Joy) Dong is a PhD candidate at the <a href="https://cse.engin.umich.edu
         <li>
           <div class="single-news">
             <div class="single-news-date" id="single-news-date">
+            <h3>[Aug 2024]</h3> 
+            </div>
+            <div class="single-news-content" id="single-news-content">
+            <h4> Our work <a href="#FlexAttn">FlexAttention</a> is lauched. See our <a href="https://pytorch.org/blog/flexattention/">PyTorch Blog</a> and 180k view <a href="https://x.com/cHHillee/status/1821253769147118004">X post</a>. Stay tuned to FlexAttention Part II - FlexDecoding launch this September.</h4>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="single-news">
+            <div class="single-news-date" id="single-news-date">
             <h3>[Jun 2024]</h3> 
             </div>
             <div class="single-news-content" id="single-news-content">
@@ -253,32 +264,32 @@ Juechu (Joy) Dong is a PhD candidate at the <a href="https://cse.engin.umich.edu
           </div>
         </li>
         
-        <li>
-          <div class="single-news">
-            <div class="single-news-date" id="single-news-date">
-            <h3>[Mar 2024]</h3> 
-            </div>
-            <div class="single-news-content" id="single-news-content">
-            <h4> Our work <a href="#mm2-gb">mm2-gb</a> for long sequence DNA mapping is accepted by <a href="https://biosys-workshop.github.io/dist/index.html">BioSys'24</a>. Checkout our open sourced <a href="https://github.com/Minimap2onGPU/mm2-gb">demo</a>. Many thanks to AMD HPC team! see you in San Diego~</h4>
-            </div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="single-news">
-            <div class="single-news-date" id="single-news-date">
-            <h3>[Jan 2024]</h3> 
-            </div>
-            <div class="single-news-content" id="single-news-content">
-            <h4> I passed PhD qualification test and becomes a PhD candidate.</h4>
-            </div>
-          </div>
-        </li>
-        
       </ul>
       <details>
         <summary> Archived news ... </summary>
         <span><ul class="news-chart archive">
+          
+          <li>
+            <div class="single-news">
+              <div class="single-news-date" id="single-news-date">
+              <h3>[Mar 2024]</h3> 
+              </div>
+              <div class="single-news-content" id="single-news-content">
+              <h4> Our work <a href="#mm2-gb">mm2-gb</a> for long sequence DNA mapping is accepted by <a href="https://biosys-workshop.github.io/dist/index.html">BioSys'24</a>. Checkout our open sourced <a href="https://github.com/Minimap2onGPU/mm2-gb">demo</a>. Many thanks to AMD HPC team! see you in San Diego~</h4>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="single-news">
+              <div class="single-news-date" id="single-news-date">
+              <h3>[Jan 2024]</h3> 
+              </div>
+              <div class="single-news-content" id="single-news-content">
+              <h4> I passed PhD qualification test and becomes a PhD candidate.</h4>
+              </div>
+            </div>
+          </li>
           
           <li>
             <div class="single-news">
@@ -378,7 +389,7 @@ Juechu (Joy) Dong is a PhD candidate at the <a href="https://cse.engin.umich.edu
                <span>Research Scientist Intern | PyTorch Team</span> 
             </div>
             <div class="single-experience-content">
-               <p>• Develop new techniques in TorchDynamo, TorchInductor, PyTorch core, PyTorch Distributed.<br> • Explore the intersection of PyTorch compiler and PyTorch distributed.<br> • Optimize Generative AI models across the stack (pre-training, fine-tuning, and inference).</p> 
+               <p>Develop new techniques in PyTorch compiler with a focus on GPU performance optimization. <br> Build the popular FlexAttention API that combines the flexibility of PyTorch and the performance of expert-tuned attention kernels. <br> Conduct performance analysis and optimizations on attention kernels.</p> 
             </div>
           </li>
           
@@ -422,6 +433,29 @@ Juechu (Joy) Dong is a PhD candidate at the <a href="https://cse.engin.umich.edu
       <div class="col-lg-12 col-sm-12 col-12 experience wow">
         <h3></h3>
         <ul class="experience-chart">
+          
+          <li id="FlexAttn">
+            <div class="single-experience align-self-center align-items-center d-flex ">
+              <div class="col-lg-9 col-sm-8 col-11 single-experience-text">
+                 <span>Planned Launch Sept 2024</span> 
+                <h4>FlexDecoding: The Flexibility of PyTorch with the Performance of FlashDecoding</h4>
+                 <span>Team PyTorch: Horace He, <u>Joy Dong</u>, Boyuan Feng, Driss Guessous, Yanbo Liang</span> 
+                 <p>[<a href="https://pytorch.org/blog/flexattention/">blog</a>] [<a href="https://github.com/pytorch/pytorch">code</a>]</p> 
+              </div>
+              <div class="col-lg-4 col-sm-4 col-8 experience-image">
+                
+                
+                
+              </div>
+            </div>
+            
+            <div class="single-experience-content d-flex align-self-center align-items-center ">
+              <div class="col-lg-12 col-sm-12 col-12 single-experience-text">
+               <p>This project builds a decoding backend for flex_attention HOP to generate efficient decoding attention kernels for customizable masks and score modification functions with GQA support. <br> 🌟<strong>Flexibility</strong>: Automatic kernel generation for user defined mask and score modification functions.<br> 🌟<strong>Fast &amp; Efficient</strong>: Similar or better performance compared to expert tuned kernels.<br> 🌟<strong>GQA Support</strong>:  Explicit support &amp; optimization for Grouped Query Attention (GQA).</p> 
+              </div>
+            </div>
+            
+          </li>
           
           <li id="toleo">
             <div class="single-experience align-self-center align-items-center d-flex ">

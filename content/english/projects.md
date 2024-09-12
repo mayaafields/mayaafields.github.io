@@ -4,6 +4,15 @@ experience:
   enable : true
   # title : "Projects"
   experience_list:
+    - name : "FlexDecoding: The Flexibility of PyTorch with the Performance of FlashDecoding" 
+      company: "Team PyTorch: Horace He, <u>Joy Dong</u>, Boyuan Feng, Driss Guessous, Yanbo Liang"
+      tag: "FlexAttn"
+      duration : "Planned Launch Sept 2024"
+      content: " This project builds a decoding backend for flex_attention HOP to generate efficient decoding attention kernels for customizable masks and score modification functions with GQA support. <br>
+      🌟**Flexibility**: Automatic kernel generation for user defined mask and score modification functions.<br>
+      🌟**Fast & Efficient**: Similar or better performance compared to expert tuned kernels.<br>
+      🌟**GQA Support**:  Explicit support & optimization for Grouped Query Attention (GQA). "
+      cmt: "[[blog](https://pytorch.org/blog/flexattention/)] [[code](https://github.com/pytorch/pytorch)] "
     - name : "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonah Rosenblum, Satish Narayanasamy"
       pin: true
