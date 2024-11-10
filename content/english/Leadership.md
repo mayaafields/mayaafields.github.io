@@ -1,5 +1,5 @@
 ---
-title: "SERVICE"
+title: "SERVICES"
 experience:
   enable : true
   title : "Leadership"
@@ -9,7 +9,7 @@ experience:
       content: "Organize weekly paper reading presentations and discussions.<br>
                 Host talks from visiting researchers and professors."
     - name : "UM-SJTU Joint Institute Alumni Association"
-      duration: "Co-Founder & Vice President"
+      duration: "Co-Founder & Co-President"
       content: "<b>Alumni Engagement</b>: Organize alumni and student gatherings.<br>
                 <b>Relationship Building</b>: Involve in expanding SJTU - UM collaborations, connecting to JI sponsors, and building industry relationships.<br>
                 <b>Career Advising</b>: Organize students career development workshops.<br>

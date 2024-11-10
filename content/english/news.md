@@ -3,9 +3,11 @@ news:
   title : "NEWS"
   enable: true
   news_list: 
-    - name: "Our work [FlexAttention](#FlexAttn) is lauched. See our [PyTorch Blog](https://pytorch.org/blog/flexattention/) and 180k view [X post](https://x.com/cHHillee/status/1821253769147118004). Stay tuned to FlexAttention Part II - FlexDecoding launch this September. "
+    - name: "Our work [mm2-gb](#mm2-gb) is accepted to [ACM BCB '24](https://acm-bcb.org/), the flagship conference of the ACM SIGBio. Join us in Shenzhen, China to see how we accelerate minimap2 using GPU!"
+      date: "Oct 2024"
+    - name: "Our work [FlexAttention](#FlexAttn) is lauched. See our [PyTorch Blog](https://pytorch.org/blog/flexattention/) and 180k view [X post](https://x.com/cHHillee/status/1821253769147118004). Stay tuned to FlexAttention Part II - decoding and paged attention. "
       date: "Aug 2024"
-    - name: "Our work [Toleo](#toleo) is accepted by [ASPLOS](https://www.asplos-conference.org/). It will be included in the ASPLOS'24 preceeding and we will present it at [ASPLOS'25](https://www.asplos-conference.org/asplos2025/). See you in Rotterdam~ "
+    - name: "Our work [Toleo](#toleo) is accepted to [ASPLOS '24](https://www.asplos-conference.org/). Its presentation is delayed to [ASPLOS '25](https://www.asplos-conference.org/asplos2025/). See you in Rotterdam~ "
       date: "Jun 2024" 
     - name: "I joined Meta Pytorch Compiler team this summer as a research scienctist intern. See you at Menlo Park~"
       date: "May 2024"

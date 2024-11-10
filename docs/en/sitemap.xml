@@ -18,9 +18,6 @@
     <loc>https://joydddd.github.io/categories/database/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://joydddd.github.io/tags/design/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
     <loc>https://joydddd.github.io/categories/design/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
@@ -41,9 +38,6 @@
                 />
   </url><url>
     <loc>https://joydddd.github.io/categories/logo/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://joydddd.github.io/blog/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
     <loc>https://joydddd.github.io/portfolio/</loc>
@@ -67,32 +61,7 @@
     <loc>https://joydddd.github.io/portfolio/project-6/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
-    <loc>https://joydddd.github.io/tags/sketch/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
     <loc>https://joydddd.github.io/categories/sketch/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://joydddd.github.io/tags/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="https://joydddd.github.io/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://joydddd.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://joydddd.github.io/blog/blog-6/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://joydddd.github.io/blog/mm2-gb/</loc>
-    <lastmod>2020-05-12T12:14:34+06:00</lastmod>
-  </url><url>
-    <loc>https://joydddd.github.io/tags/web/</loc>
     <lastmod>2020-05-12T12:14:34+06:00</lastmod>
   </url><url>
     <loc>https://joydddd.github.io/blog/blog-2/</loc>
@@ -107,6 +76,8 @@
   </url><url>
     <loc>https://joydddd.github.io/teaching/</loc>
   </url><url>
+    <loc>https://joydddd.github.io/tags/citeme/</loc>
+  </url><url>
     <loc>https://joydddd.github.io/experience/</loc>
   </url><url>
     <loc>https://joydddd.github.io/friends/</loc>
@@ -116,6 +87,8 @@
     <loc>https://joydddd.github.io/about/</loc>
   </url><url>
     <loc>https://joydddd.github.io/banner/</loc>
+  </url><url>
+    <loc>https://joydddd.github.io/blog/mm2-gb-cite/</loc>
   </url><url>
     <loc>https://joydddd.github.io/call-to-action/</loc>
   </url><url>
@@ -127,10 +100,26 @@
   </url><url>
     <loc>https://joydddd.github.io/contact/</loc>
   </url><url>
+    <loc>https://joydddd.github.io/blog/secret-gwas-cite/</loc>
+  </url><url>
     <loc>https://joydddd.github.io/leadership/</loc>
   </url><url>
     <loc>https://joydddd.github.io/service/</loc>
   </url><url>
+    <loc>https://joydddd.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-fr"
+                href="https://joydddd.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://joydddd.github.io/tags/"
+                />
+  </url><url>
     <loc>https://joydddd.github.io/testimonial/</loc>
+  </url><url>
+    <loc>https://joydddd.github.io/blog/toleo-cite/</loc>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 ---
 title: "Oh My Blog!"
 description: "This is meta description."
-draft: false
+draft: true
 
 
 # custom style
