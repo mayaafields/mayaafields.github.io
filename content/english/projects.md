@@ -4,7 +4,7 @@ experience:
   enable : true
   # title : "Projects"
   experience_list:
-    - name : "FlexAttention: The Flexibility of PyTorch with the Performance of FlashDecoding" 
+    - name : "FlexAttention: The Flexibility of PyTorch with the Performance of FlashAttention" 
       company: "Team PyTorch: <u>Joy Dong</u> *, Boyuan Feng *, Driss Guessous *, Yanbo Liang *, Horace He"
       pin: true
       tag: "FlexAttn"
@@ -15,7 +15,7 @@ experience:
       🌟**Flexible**: Allow users to implements majority of attention variants in a few lines of idomatic PyTorch code.<br>
       🌟**Fast & Efficient**: Achive comparable performance to expert tuned kernels via JIT torch.compile.<br>
       🌟**Block Sparsity**:  Leverages block sparsity to further improve performance without manual optimization for a specific mask. "
-      cmt: "[[blog](https://pytorch.org/blog/flexattention/)] [[code](https://github.com/pytorch/pytorch)] *authors contributed equally to this work."
+      cmt: "[[blog](https://pytorch.org/blog/flexattention/)] [[code](https://github.com/pytorch/pytorch)] [[BibTex](/blog/FlexAttn-cite)] *authors contributed equally to this work."
     - name : "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonah Rosenblum, Satish Narayanasamy"
       pin: true
