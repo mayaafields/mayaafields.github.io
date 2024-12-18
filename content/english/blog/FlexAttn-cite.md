@@ -6,4 +6,12 @@ tags: ["CITEME"]
 description:
 draft: false
 ---
-@misc{He_Guessous_Liang_Dong_2024, title={https://pytorch.org/blog/flexattention/}, url={https://pytorch.org/blog/flexattention/}, journal={FlexAttention: The Flexibility of PyTorch with the Performance of FlashAttention}, publisher={PYTorch}, author={He, Horace and Guessous, Driss and Liang, Yanbo and Dong, Joy}, year={2024}, month={Aug}} 
+@misc{dong2024flexattentionprogrammingmodel,
+      title={Flex Attention: A Programming Model for Generating Optimized Attention Kernels}, 
+      author={Juechu Dong and Boyuan Feng and Driss Guessous and Yanbo Liang and Horace He},
+      year={2024},
+      eprint={2412.05496},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2412.05496}, 
+}

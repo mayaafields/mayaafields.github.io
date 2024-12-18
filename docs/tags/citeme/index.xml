@@ -13,14 +13,14 @@
       <link>https://joydddd.github.io/blog/flexattn-cite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://joydddd.github.io/blog/flexattn-cite/</guid>
-      <description>@misc{He_Guessous_Liang_Dong_2024, title={https://pytorch.org/blog/flexattention/}, url={https://pytorch.org/blog/flexattention/}, journal={FlexAttention: The Flexibility of PyTorch with the Performance of FlashAttention}, publisher={PYTorch}, author={He, Horace and Guessous, Driss and Liang, Yanbo and Dong, Joy}, year={2024}, month={Aug}}</description>
+      <description>@misc{dong2024flexattentionprogrammingmodel, title={Flex Attention: A Programming Model for Generating Optimized Attention Kernels}, author={Juechu Dong and Boyuan Feng and Driss Guessous and Yanbo Liang and Horace He}, year={2024}, eprint={2412.</description>
     </item>
     <item>
       <title>mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping</title>
       <link>https://joydddd.github.io/blog/mm2-gb-cite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://joydddd.github.io/blog/mm2-gb-cite/</guid>
-      <description>@article {Dong2024.03.23.586366, author = {Dong, Juechu and Liu, Xueshen and Sadasivan, Harisankar and Sitaraman, Sriranjani and Narayanasamy, Satish}, title = {mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping}, elocation-id = {2024.</description>
+      <description>@inproceedings{10.1145/3698587.3701366, author = {Dong, Juechu and Liu, Xueshen and Sadasivan, Harisankar and Sitaraman, Sriranjani and Narayanasamy, Satish}, title = {mm2-gb: GPU Accelerated Minimap2 for Long Read DNA Mapping}, year = {2024}, isbn = {9798400713026}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.</description>
     </item>
     <item>
       <title>SECRET-GWAS: Confidential Computing for Population-Scale GWAS</title>
