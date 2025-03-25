@@ -4,7 +4,8 @@ title : "I'm Juechu \"Joy\" Dong"
 # animated text loop
 occupations:
 - "Confidential Computing"
-- "Computer Architect"
+- "GPU Programming Model"
+- "Computer Architect & Systems"
 - "PhD candidate @Umich"
 
 

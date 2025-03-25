@@ -9,25 +9,34 @@ experience:
       pin: true
       tag: "FlexAttn"
       img: "images/portfolio/FlexAttn.jpg"
-      link: https://pytorch.org/blog/flexattention/
-      duration : "MLSys \'25 - under submission"
+      link: https://mlsys.org/virtual/2025/poster/3007
+      duration : "MLSys \'25"
       content: " FlexAttention is a novel compiler-driven programming model for flexible and efficient attention variants implementation. <br>
       🌟**Flexible**: Allow users to implements majority of attention variants in a few lines of idomatic PyTorch code.<br>
       🌟**Fast & Efficient**: Achive comparable performance to expert tuned kernels via JIT torch.compile.<br>
       🌟**Block Sparsity**:  Leverages block sparsity to further improve performance without manual optimization for a specific mask. "
-      cmt: "[[arxiv]](https://arxiv.org/abs/2412.05496)[[blog](https://pytorch.org/blog/flexattention/)] [[code](https://github.com/pytorch/pytorch)] [[citeme](/blog/FlexAttn-cite)] *authors contributed equally to this work."
+      cmt: "*authors contributed equally to this work. <br>
+       [[poster]](https://mlsys.org/virtual/2025/poster/3007)
+       [[arxiv]](https://arxiv.org/abs/2412.05496)
+       [[blog](https://pytorch.org/blog/flexattention/)]
+       [[github](https://github.com/pytorch/pytorch)]"
+      bibtex: /bibtex/flexattn.bib
     - name : "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonah Rosenblum, Satish Narayanasamy"
       pin: true
       tag: "toleo"
       img: "images/portfolio/Toleo.png"
-      duration : "ASPLOS \'24 -- Accepted"
+      duration : "ASPLOS \'24"
       content: " 🌟Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br>
                  🌟Design a new scheme of freshness protection that reduces the space requirement by 50x. <br>
                  🌟Reduce deployment cost by spacing sharing one intelligent memory device among multiple CPUs. "
-      cmt: "We will present Toleo at [ASPLOS'25](https://www.asplos-conference.org/asplos2025/)! [[arxiv](https://arxiv.org/abs/2410.12749)] [[code](https://github.com/joydddd/Toleo)] [[citeme](/blog/Toleo-cite)]" 
+      cmt: "We will present Toleo at [ASPLOS'25](https://www.asplos-conference.org/asplos2025/)! <br> 
+            [[arxiv](https://arxiv.org/abs/2410.12749)]
+            [[github](https://github.com/joydddd/Toleo)]"
+      bibtex: /bibtex/toleo.bib 
     - name : "SECRET-GWAS: Confidential Computing for Population-Scale GWAS"
-      cmt: "[[preprint](https://www.biorxiv.org/content/10.1101/2024.04.24.590989v1)] [[code](https://github.com/jonahrosenblum/SECRET-GWAS)] [[citeme](/blog/SECRET-GWAS-cite)]"
+      cmt: "[[preprint](https://www.biorxiv.org/content/10.1101/2024.04.24.590989v1)] [[code](https://github.com/jonahrosenblum/SECRET-GWAS)]"
+      bibtex: /bibtex/secret-gwas.bib
       company : "Jonah Rosenblum, <u>Juechu Dong</u>, Satish Narayanasamy"
       duration : "Nature Computer Science -- under submission"
       content : "Develop a thousand-core platform on Azure Confidential Computing to conduct multi-institutional GWAS on millions of patients in less than a minute. <br>
@@ -41,7 +50,12 @@ experience:
                 **Scales well**: Optimize towards ultra long reads of 50kb+ to accommodate genome sequencing technology trend. <br>
                 **Open Sourced!** with active maintainance and optimization! Welcome community contributions~ "
       img: "images/portfolio/mm2-workflow.png"
-      cmt: "[[paper](https://dl.acm.org/doi/10.1145/3698587.3701366)] [[code](https://github.com/Minimap2onGPU/mm2-gb)]  [[slides]](/downloads/mm2-gb-BioSys-slides.pdf) [[AMD Blog](https://rocm.blogs.amd.com/ecosystems-and-partners/university-of-michigan/README.html)] [[citeme](/blog/mm2-gb-cite)] *both authors contributed equally to this work. " 
+      cmt: "*both authors contributed equally to this work. <br>
+          [[paper](https://dl.acm.org/doi/10.1145/3698587.3701366)]
+          [[github](https://github.com/Minimap2onGPU/mm2-gb)]  
+          [[slides]](/downloads/mm2-gb-BioSys-slides.pdf) 
+          [[blog](https://rocm.blogs.amd.com/ecosystems-and-partners/university-of-michigan/README.html)]" 
+      bibtex: "/bibtex/mm2-gb.bib"
       link: https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"

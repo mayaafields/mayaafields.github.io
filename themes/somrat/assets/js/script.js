@@ -261,6 +261,29 @@
 			 End Portfolio
 	----------------------------------*/
 
+
+	/*--------------------------------
+				Start Bibtex
+	----------------------------------*/
+	document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".open-bibtex").forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        let url = this.getAttribute("data-bibtex-url");
+        fetch(url)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("bibtexContent").textContent = data;
+            document.getElementById("bibtexModal").style.display = "block";
+          });
+      });
+    });
+    
+    document.querySelector(".modal .close").addEventListener("click", function() {
+      document.getElementById("bibtexModal").style.display = "none";
+    });
+  });
+
 	/*--------------------------------
 			 Start Testimonials
 	----------------------------------*/
