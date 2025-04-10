@@ -1,6 +1,6 @@
 ---
 news: 
-  title : "NEWS"
+  title : "News"
   enable: true
   news_list: 
     - name: "Excited to be selected to recieve the MLCommons ML and Systems Rising Star Award!!"

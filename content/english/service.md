@@ -1,5 +1,5 @@
 ---
-title : "SERVICES"
+title : "Services"
 service_list:
 # service item loop
 - name : "Web Development"

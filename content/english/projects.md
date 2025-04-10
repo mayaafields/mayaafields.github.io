@@ -1,5 +1,5 @@
 ---
-title: "PUBLICATIONS"
+title: "Publications"
 experience:
   enable : true
   # title : "Projects"

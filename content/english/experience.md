@@ -1,5 +1,5 @@
 ---
-title : "EXPERIENCE"
+title : "Experience"
 experience:
   enable : true
   title : "Industry"
