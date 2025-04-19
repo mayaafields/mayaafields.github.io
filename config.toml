@@ -3,7 +3,7 @@ baseURL = "https://joydddd.github.io/"
 title = "Joy Dong"
 theme = "somrat"
 # post pagination
-paginate = "6"
+pagination.pagerSize = "6"
 # post excerpt
 summaryLength = "10"
 # disable language
