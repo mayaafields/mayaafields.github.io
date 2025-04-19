@@ -85,9 +85,10 @@
             <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
             {{ end }}
           </ul>
+        </div>
       </div>
       {{ with .Params.image }}
-      <div class="col-lg-4 col-sm-4 col-9 about-me-images wow">
+      <div class="col-lg-4 col-sm-4 col-4 about-me-images wow">
         <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
       </div>
       {{ end }}

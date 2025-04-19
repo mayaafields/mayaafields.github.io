@@ -9,7 +9,7 @@
     content="This is meta description">
   
   <meta name="author" content="somrat">
-  <meta name="generator" content="Hugo 0.125.7">
+  <meta name="generator" content="Hugo 0.146.5">
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,15 +52,12 @@
   <meta property="og:url" content="https://joydddd.github.io/blog/blog-3/">
   <meta property="og:site_name" content="Joy Dong">
   <meta property="og:title" content="R10K Based Out of Order Processor">
-  <meta property="og:description" content="This is the project report for University of Michigan course EECS470 Computer Architecture.">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:description" content="This is the project report for University of Michigan course EECS470 Computer Architecture. We designed a 3-way scaled, R10K based out-of-order processor with advanced branch predictor, prefetching and non-blocked DCache with system verilog. The issue stage uses FIFO to help reduce clock cycle during reservation station selection.">
+  <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
 
   
-  
-
-
 
 </head><body>
 <!-- preloader start -->
@@ -179,43 +176,43 @@ In this report, we will elaborate design choices, implementation and performance
 <p>We built an out-of-order, 32-bit processor based on the 3-way scaled R10K microarchitecture, with advanced branch predictor, non-blocking cache design and prefetcher, as shown in Fig. \ref{overview}. Our processor support 32 bits RV32IM ISA, without fences, division, CSR operations and system calls.</p>
 <p>Pipeline Spec:</p>
 <table>
-<thead>
-<tr>
-<th style="text-align:center">RS</th>
-<th style="text-align:center">ROB</th>
-<th style="text-align:center">PR</th>
-<th style="text-align:center">FUs</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">16 entries</td>
-<td style="text-align:center">32 entries</td>
-<td style="text-align:center">64 regs</td>
-<td style="text-align:center">3 ALU, 2 Load, 1 Branch, 2 Mult</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">RS</th>
+          <th style="text-align: center">ROB</th>
+          <th style="text-align: center">PR</th>
+          <th style="text-align: center">FUs</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">16 entries</td>
+          <td style="text-align: center">32 entries</td>
+          <td style="text-align: center">64 regs</td>
+          <td style="text-align: center">3 ALU, 2 Load, 1 Branch, 2 Mult</td>
+      </tr>
+  </tbody>
 </table>
 <p>Advanced features spec:</p>
 <table>
-<thead>
-<tr>
-<th>ICache</th>
-<th>Prefetcher</th>
-<th>SQ</th>
-<th>DCache</th>
-<th>BP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>256 Bytes</td>
-<td>12 lines ahead</td>
-<td>8 entries</td>
-<td>256 Bytes</td>
-<td>32 entries</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>ICache</th>
+          <th>Prefetcher</th>
+          <th>SQ</th>
+          <th>DCache</th>
+          <th>BP</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>256 Bytes</td>
+          <td>12 lines ahead</td>
+          <td>8 entries</td>
+          <td>256 Bytes</td>
+          <td>32 entries</td>
+      </tr>
+  </tbody>
 </table>
 <p>Download <a href="/downloads/EECS470_Out_of_Order_Processor_JoyDong.pdf" download="report">report</a></p>
 <h1 id="team">Team</h1>

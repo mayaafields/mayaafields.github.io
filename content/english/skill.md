@@ -1,6 +1,6 @@
 ---
 skill: 
-    title: "SKILLS"
+    title: "Skills"
     enable: true
     skill_list:
         - name: "Programming Language"

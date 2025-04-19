@@ -2053,22 +2053,29 @@ textarea.form-control::-webkit-input-placeholder,
   Start Header
 ----------------------------------*/
 
-@media(max-width: 550px) and (min-height: 501px) {
+@media(max-width: 800px) {
   .introduction {
     font-size: 45px;
     margin-bottom: 5px;
+    margin-left: 10px;
   }
 
   .animated-text {
     font-size: 21px;
     margin-top: 7px;
     margin-bottom: 2px;
+    margin-left: 10px;
   }
 
   .head-holder .hireMe {
     margin-top: 10px;
     font-size: 18px;
     padding: 3px 12px;
+  }
+
+  .header {
+    height: 10%;
+    background-position: center;
   }
 }
 
@@ -2245,11 +2252,6 @@ textarea.form-control::-webkit-input-placeholder,
   }
 }
 
-@media (max-width: 990px) {
-  .header {
-    background-position: center;
-  }
-}
 
 @media (min-height: 301px) and (max-height: 500px) {
   .introduction {
@@ -2370,61 +2372,72 @@ textarea.form-control::-webkit-input-placeholder,
   Start About Me
 ----------------------------------*/
 
-
-.about-me-text {
-  display: block;
-  height: auto;
-  -webkit-order: 2;
-  -moz-order: 2;
-  -ms-order: 2;
-  -o-order: 2;
-  order: 2;
-}
-
-.about-me-images {
-  -webkit-order: 1;
-  -moz-order: 1;
-  -ms-order: 1;
-  -o-order: 1;
-  order: 1;
-  margin-bottom: 30px;
-}
-
 .about
 
 .about-me-holder {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
-.experience-skill {
-  margin-top: 10px;
+
+.about-me-text {
+  flex: 1 1 50%;
+  min-width: 300px;
+  order: 1;
 }
 
-.experience-chart,
-.skill-progress-bar {
-  margin-top: 25px;
+.about-me-images {
+  flex: 1 1 40%;
+  min-width: 250px;
+  order: 2;
 }
 
-.skill {
-  margin-top: 10px;
-}
-
-.skillbar {
-  margin-bottom: 15px;
-}
-
-@media (min-width:601px) and (max-width: 991px) {
+@media (max-width:800px) {
   .about-me {
-    padding: 50px 0px 10px 0px;
+    padding: 10px 0px 10px 15px;
+  }
+
+  .about-me-holder {
+    flex-direction: column;
+  }
+
+  .about-me-images {
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) {
-  .about-me {
-    padding: 30px 0px 0px 0px;
+
+/*--------------------------------
+  Start News
+----------------------------------*/
+
+@media (max-width: 991px) {
+  .news {
+    padding: 0px 5px 0px 5px;
   }
 }
+
+
+/*--------------------------------
+  Start Experience
+----------------------------------*/
+
+@media (max-width: 991px) {
+  .experience {
+    padding: 0px 5px 0px 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .skill {
+    padding: 0px 5px 0px 10px;
+  }
+}
+
+
 
 /*--------------------------------
   Start Services
