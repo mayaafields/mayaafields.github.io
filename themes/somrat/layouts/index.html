@@ -41,8 +41,8 @@
 <!-- Start Menu -->
 <section class="menu" id="menu">
   <nav>
-    <!-- desktop-menu -->
     <div class="menu-container">
+      <!-- desktop-menu -->
       <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
         {{ range site.Menus.main }}
         <li class="menu-item hvr-underline-from-left 1">
@@ -50,10 +50,40 @@
         </li>
         {{ end }}
       </ul>
-      <!-- Language List -->
-      <!-- /desktop-menu -->
-
       <!-- mobile-menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-logo">
+          <a href="{{site.BaseURL | relLangURL }}">
+            <p> {{ site.Title }} </p>
+            <!-- <img class="img-fluid" src="{{ site.Params.logo_dark | absURL }}" alt="{{ site.Title }}"> -->
+          </a>
+        </div>
+      
+        <a class="menu-link">
+          <div class="mobile-menu-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      
+        <div class="menu-slider">
+          <nav>
+            <ul class="mobile-menu-list">
+              {{ range site.Menus.main }}
+              <li class="hvr-shutter-out-vertical mobile-menu-item item-1">
+                <a href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+            <ul class="mobile-menu-icons list-inline">
+              {{ range site.Params.social }}
+              <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </nav>
 </section>
