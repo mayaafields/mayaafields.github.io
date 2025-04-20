@@ -9,14 +9,14 @@ experience:
       pin: true
       tag: "FlexAttn"
       img: "images/portfolio/FlexAttn.jpg"
-      link: https://mlsys.org/virtual/2025/poster/3007
+      link: https://mlsys.org/virtual/2025/poster/3286
       duration : "MLSys \'25"
       content: " FlexAttention is a novel compiler-driven programming model for flexible and efficient attention variants implementation. <br>
       🌟**Flexible**: Allow users to implements majority of attention variants in a few lines of idomatic PyTorch code.<br>
       🌟**Fast & Efficient**: Achive comparable performance to expert tuned kernels via JIT torch.compile.<br>
       🌟**Block Sparsity**:  Leverages block sparsity to further improve performance without manual optimization for a specific mask. "
       cmt: "*authors contributed equally to this work. <br>
-       [[poster]](https://mlsys.org/virtual/2025/poster/3007)
+       [[poster]](https://mlsys.org/virtual/2025/poster/3286)
        [[arxiv]](https://arxiv.org/abs/2412.05496)
        [[blog](https://pytorch.org/blog/flexattention/)]
        [[github](https://github.com/pytorch/pytorch)]"

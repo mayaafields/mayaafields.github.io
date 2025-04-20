@@ -4,7 +4,7 @@ image : "images/backgrounds/portrait.jpg"
 # button
 button:
   enable : true
-  label : "DOWNLOAD MY CV"
+  label : "CV"
   link : "https://github.com/joydddd/CV/blob/master/main.pdf"
 
 
