@@ -227,7 +227,7 @@
       {{ if .enable }}
       <div class="col-lg-12 col-sm-12 col-12 experience wow">
         <h3>{{ .title }}</h3>
-        <ul class="award-chart">
+        <ul class="experience-chart award-chart">
           {{ range .experience_list }}
           <li>
             <div class="single-experience">
@@ -274,7 +274,7 @@
       {{ if .enable }}
       <div class="col-lg-6 col-sm-6 col-11 experience wow">
         <h3>{{ .title }}</h3>
-        <ul class="edu-chart">
+        <ul class="experience-chart edu-chart">
           {{ range .experience_list }}
           <li>
             <div class="single-experience">
@@ -298,7 +298,7 @@
       {{ if .enable }}
       <div class="col-lg-6 col-sm-6 col-11 experience wow">
         <h3>{{ .title }}</h3>
-        <ul class="industry-chart">
+        <ul class="experience-chart industry-chart">
           {{ range .experience_list }}
           <li>
             <div class="single-experience">
@@ -351,10 +351,18 @@
         <ul class="experience-chart">
           {{ range .experience_list }}
           <li id="{{ with .tag }}{{ . }}{{ end }}">
-            <div class="single-experience align-self-center align-items-center d-flex ">
+            <div class="single-experience align-self-center align-items-start d-flex ">
               <div class="single-experience-text">
-                {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
-                <h4>{{ .name | markdownify }}</h4>
+                {{ with .duration }} <span><b>{{ . | markdownify }}</b></span> {{ end }}
+                <h4>
+                  {{ if .link}}
+                  {{ with .link }} <a href="{{ . | absURL}}"> {{ end }}
+                  {{ .name | markdownify }}
+                  </a> 
+                  {{ else }}
+                  {{ .name | markdownify }}
+                  {{ end }}
+                </h4>
                 {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
 
                 {{ if .cmt }}

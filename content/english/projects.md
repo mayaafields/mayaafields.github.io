@@ -23,16 +23,15 @@ experience:
       bibtex: /bibtex/flexattn.bib
     - name : "Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM"  # Toleo: Scaling Freshness to Tera-scale Memory Using CXL and PIM
       company : "<u>Juechu Dong</u>, Jonah Rosenblum, Satish Narayanasamy"
-      pin: true
+      pin: false
       tag: "toleo"
       img: "images/portfolio/Toleo.png"
       duration : "ASPLOS \'24"
       content: " 🌟Scale trusted memory size from hundreds of MB to tens of TB by expanding the span of trusted from a single trusted processor to an entire platform including intelligent memories. <br>
                  🌟Design a new scheme of freshness protection that reduces the space requirement by 50x. <br>
                  🌟Reduce deployment cost by spacing sharing one intelligent memory device among multiple CPUs. "
-      cmt: "We will present Toleo at [ASPLOS'25](https://www.asplos-conference.org/asplos2025/)! <br> 
-            [[arxiv](https://arxiv.org/abs/2410.12749)]
-            [[github](https://github.com/joydddd/Toleo)]"
+      cmt: "[[paper](https://dl.acm.org/doi/10.1145/3622781.3674180)]
+            [[github](https://github.com/joydddd/Toleo)] [[poster](/downloads/ToleoPoster.pdf)]"
       bibtex: /bibtex/toleo.bib 
     - name : "SECRET-GWAS: Confidential Computing for Population-Scale GWAS"
       cmt: "[[preprint](https://www.biorxiv.org/content/10.1101/2024.04.24.590989v1)] [[code](https://github.com/jonahrosenblum/SECRET-GWAS)]"
@@ -56,7 +55,7 @@ experience:
           [[slides]](/downloads/mm2-gb-BioSys-slides.pdf) 
           [[blog](https://rocm.blogs.amd.com/ecosystems-and-partners/university-of-michigan/README.html)]" 
       bibtex: "/bibtex/mm2-gb.bib"
-      link: https://www.biorxiv.org/content/10.1101/2024.03.23.586366v1
+      link: https://dl.acm.org/doi/10.1145/3698587.3701366
     # - name : "Crossbar For Programmable Fully Homomorphic Encryption Accelerator"
     #   company : "advised by <a href=\"https://web.eecs.umich.edu/~rdreslin/\">Dr. Ronald Dreslinski</a> @UMich"
     #   duration : "2021 Sept - 2022 May"
