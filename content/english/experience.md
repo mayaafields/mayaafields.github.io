@@ -6,8 +6,10 @@ experience:
   experience_list:
     - name: "Meta"
       company: "Research Scientist Intern | PyTorch Team"
-      duration: "2024 May - 2024 Aug"
-      content: "Build flexible and efficient attention programming model: FlexAttention. <br>
+      duration: "2024, 2025"
+      content: "Build domain-specific language Helion for authoring machine learning kernels. <br> 
+      Work with Helion compiler and designed in-kernel communication APIs for Helion. <br>
+      Build flexible and efficient attention programming model: FlexAttention. <br>
       Work with TorchInductor and conduct performance analysis and optimizations on attention kernels."
     - name: "NVIDIA"
       company: "Deep Learning Compute Architect Intern | GPU Architecture"
